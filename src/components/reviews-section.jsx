@@ -14,7 +14,7 @@ export function ReviewsSection() {
       date: "March 15",
       rating: 5,
       comment:
-        "Brilliant organization of the conference. The diversity of speakers and topics covered was impressive. The virtual networking platform worked seamlessly.",
+        "Brilliant organization of the virtual conference. The diversity of speakers and interdisciplinary topics covered was impressive. The networking platform worked seamlessly across time zones.",
     },
     {
       name: "Prof. Michael Rodriguez",
@@ -22,7 +22,7 @@ export function ReviewsSection() {
       date: "March 12",
       rating: 5,
       comment:
-        "Outstanding presentation on quantum computing applications in multidisciplinary research. The conference exceeded my expectations in terms of content quality and expert engagement.",
+        "Outstanding presentation on cross-disciplinary approaches to climate science. NextGenSynergy exceeded my expectations in terms of content quality and fostering meaningful connections.",
     },
     {
       name: "Dr. Sarah Johnson",
@@ -30,7 +30,7 @@ export function ReviewsSection() {
       date: "March 14",
       rating: 4,
       comment:
-        "Informative sessions on cross-disciplinary collaboration. The case studies presented were relevant and actionable. Looking forward to next year's conference.",
+        "Informative sessions on bridging social sciences with data analytics. The case studies presented were relevant and actionable. Looking forward to next year's forum.",
     },
     {
       name: "Alex Thompson",
@@ -38,7 +38,7 @@ export function ReviewsSection() {
       date: "March 10",
       rating: 5,
       comment:
-        "The MetaConnect conference was a game-changer for our research team. We've already implemented several of the methodologies shared during the sessions.",
+        "The NextGenSynergy conference was a game-changer for our interdisciplinary research team. The virtual format allowed us to collaborate with colleagues we'd never have met otherwise.",
     },
     {
       name: "Dr. Hiroshi Tanaka",
@@ -46,7 +46,7 @@ export function ReviewsSection() {
       date: "March 13",
       rating: 4,
       comment:
-        "Excellent organization and thought-provoking discussions. The virtual reality demonstrations were particularly impressive.",
+        "Excellent organization and thought-provoking discussions across disciplines. The interactive virtual workshops facilitated genuine knowledge exchange despite physical distance.",
     },
     {
       name: "Lisa Wagner",
@@ -54,7 +54,7 @@ export function ReviewsSection() {
       date: "March 11",
       rating: 5,
       comment:
-        "The conference provided valuable insights into emerging research paradigms. The interdisciplinary approach was refreshing and inspiring.",
+        "The forum provided valuable insights into emerging interdisciplinary research paradigms. The ability to access sessions across multiple tracks virtually was particularly valuable.",
     },
   ]
 
@@ -64,9 +64,9 @@ export function ReviewsSection() {
     totalCount: 1247,
     categories: [
       { name: "Content Quality", rating: 4.9 },
-      { name: "Organization", rating: 4.7 },
-      { name: "Networking", rating: 4.6 },
-      { name: "Innovation", rating: 4.8 },
+      { name: "Virtual Experience", rating: 4.7 },
+      { name: "Interdisciplinary Value", rating: 4.8 },
+      { name: "Accessibility", rating: 4.6 },
     ],
   }
 
@@ -133,7 +133,7 @@ export function ReviewsSection() {
               <div className="h-1 w-20 bg-gradient-to-r from-cyan-400 to-fuchsia-400 mx-auto mb-8 rounded-full"></div>
 
               <p className="text-lg text-purple-100/90 max-w-2xl mx-auto">
-                Explore what past attendees have to say about their MetaConnect experience
+                Explore what past attendees have to say about their NextGenSynergy experience
               </p>
             </div>
 
@@ -218,4 +218,3 @@ export function ReviewsSection() {
     </section>
   )
 }
-

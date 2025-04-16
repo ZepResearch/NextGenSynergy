@@ -15,7 +15,7 @@ export default function Home() {
     <AboutSection/>
     <ObjectivesSection/> 
     <CtaSection/>
-    <VenueDetailCard/>
+    {/* <VenueDetailCard/> */}
     <ReviewsSection/>   
     <FaqSection/>
     </div>

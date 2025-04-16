@@ -7,7 +7,7 @@ import Footer from "@/components/Footer"
 const inter = Inter({ subsets: ["latin"] })
 
 export const metadata = {
-  title: "MetaConnect: The Future of Multidisciplinary Research",
+  title: "NextGen Synergy: The Virtual Interdisciplinary Forum",
   description:
     "A conference bringing together researchers, technologists, and visionaries to explore the intersection of virtual worlds and scientific discovery.",
 }

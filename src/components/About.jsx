@@ -1,6 +1,6 @@
 import Link from "next/link"
 import { Button } from "@/components/ui/button"
-import { ArrowRight, Users, Calendar, MapPin } from "lucide-react"
+import { ArrowRight, Users, Calendar, Video } from "lucide-react"
 
 export function AboutSection() {
   return (
@@ -20,22 +20,23 @@ export function AboutSection() {
               <div className="h-1 w-20 bg-gradient-to-r from-cyan-400 to-fuchsia-400 mx-auto mb-8 rounded-full"></div>
 
               <p className="text-lg text-purple-100/90 mb-8">
-                MetaConnect brings together researchers, technologists, and visionaries to explore the intersection of
-                virtual worlds and scientific discovery. Join us for three days of groundbreaking presentations,
-                workshops, and networking opportunities that will shape the future of multidisciplinary research.
+                NextGenSynergy brings together researchers, technologists, and visionaries to explore interdisciplinary 
+                approaches to today's most pressing challenges. Join us for two days of groundbreaking presentations, 
+                workshops, and networking opportunities that will foster collaboration across diverse academic and 
+                professional fields.
               </p>
 
               <div className="grid grid-cols-1 md:grid-cols-3 gap-6 mb-10">
                 <div className="flex flex-col items-center p-4 rounded-xl bg-purple-500/10 backdrop-blur-sm border border-purple-400/20">
                   <Calendar className="h-8 w-8 text-cyan-400 mb-3" />
-                  <h3 className="text-white font-medium">June 15-17, 2025</h3>
-                  <p className="text-purple-200/70 text-sm">3 Days of Innovation</p>
+                  <h3 className="text-white font-medium">July 17th-18th, 2025</h3>
+                  <p className="text-purple-200/70 text-sm">2 Days of Innovation</p>
                 </div>
 
                 <div className="flex flex-col items-center p-4 rounded-xl bg-purple-500/10 backdrop-blur-sm border border-purple-400/20">
-                  <MapPin className="h-8 w-8 text-fuchsia-400 mb-3" />
-                  <h3 className="text-white font-medium">Tech Innovation Center</h3>
-                  <p className="text-purple-200/70 text-sm">San Francisco, CA</p>
+                  <Video className="h-8 w-8 text-fuchsia-400 mb-3" />
+                  <h3 className="text-white font-medium">Virtual Conference</h3>
+                  <p className="text-purple-200/70 text-sm">Global Accessibility</p>
                 </div>
 
                 <div className="flex flex-col items-center p-4 rounded-xl bg-purple-500/10 backdrop-blur-sm border border-purple-400/20">
@@ -50,7 +51,7 @@ export function AboutSection() {
                 className="bg-gradient-to-r from-cyan-600 to-fuchsia-600 hover:from-cyan-500 hover:to-fuchsia-500 text-white border-0 rounded-lg px-8 py-6 text-lg group"
               >
                 <Link href="/about">
-                  Learn More About MetaConnect
+                  Learn More About NextGenSynergy
                   <ArrowRight className="ml-2 h-5 w-5 transition-transform group-hover:translate-x-1" />
                 </Link>
               </Button>
@@ -61,4 +62,3 @@ export function AboutSection() {
     </section>
   )
 }
-

@@ -5,11 +5,11 @@ import { Button } from "@/components/ui/button"
 import { ChevronRight, Calendar, Clock, ChevronDown, ChevronUp } from 'lucide-react'
 
 export default function Schedule() {
-  const [activeDate, setActiveDate] = useState("April - 23 | Registration")
+  const [activeDate, setActiveDate] = useState("July - 17th | Registration")
 
   const scheduleData = [
     {
-      date: "April - 23 | Registration",
+      date: "July - 17th | Registration",
       items: [
         { time: "8:00AM - 9:15AM", title: "Registration" },
         { time: "9:15AM - 9:30AM", title: "Inaugural Function" },
@@ -23,7 +23,7 @@ export default function Schedule() {
       ],
     },
     {
-      date: "April - 24 | Closing Day",
+      date: "July - 18th | Closing Day",
       items: [
         { time: "9:00AM - 9:30AM", title: "Registration" },
         { time: "9:30AM - 10:00AM", title: "Closing Ceremony Opening Remarks" },
@@ -45,7 +45,7 @@ export default function Schedule() {
         <div className="container mx-auto px-4">
           <div className="text-center mb-16 max-w-3xl mx-auto">
             <div className="inline-flex items-center rounded-full border border-purple-400/30 bg-purple-500/10 px-4 py-1.5 text-sm font-medium text-purple-200 backdrop-blur-md mb-6">
-              <span>MetaConnect 2025</span>
+              <span>NextGenSynergy 2025</span>
               <ChevronRight className="ml-1 h-4 w-4" />
             </div>
 
@@ -56,7 +56,7 @@ export default function Schedule() {
             <div className="h-1 w-20 bg-gradient-to-r from-cyan-400 to-fuchsia-400 mx-auto mb-8 rounded-full"></div>
 
             <p className="text-lg text-purple-100/90">
-              Explore the full program of events for MetaConnect 2025
+              Explore the full program of events for NextGenSynergy 2025
             </p>
           </div>
         </div>

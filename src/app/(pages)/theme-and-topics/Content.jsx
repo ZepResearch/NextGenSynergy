@@ -14,48 +14,48 @@ export default function ThemeAndTopics() {
 
   const topics = [
     {
-      title: "Virtual Research Environments",
+      title: "Virtual Collaboration Tools",
       subtopics: [
-        "Design and implementation of virtual research spaces",
-        "Collaborative tools for remote scientific inquiry",
-        "Virtual reality applications in laboratory settings",
-        "Data visualization in immersive environments",
+        "Designing effective virtual research and collaboration spaces",
+        "Synchronous and asynchronous tools for interdisciplinary teamwork",
+        "Virtual whiteboards and idea visualization platforms",
+        "Data sharing and co-editing in real-time environments",
       ],
     },
     {
-      title: "Cross-Disciplinary Methodologies",
+      title: "Interdisciplinary Research Methods",
       subtopics: [
-        "Integrating qualitative and quantitative approaches",
-        "Adapting methods across disciplinary boundaries",
-        "Novel frameworks for interdisciplinary collaboration",
-        "Case studies of successful cross-disciplinary projects",
+        "Bridging methodological gaps between disciplines",
+        "Creating common language and frameworks across fields",
+        "Novel approaches to interdisciplinary problem-solving",
+        "Case studies of successful interdisciplinary virtual collaborations",
       ],
     },
     {
-      title: "AI and Machine Learning in Research",
+      title: "AI-Enhanced Collaboration",
       subtopics: [
-        "AI-assisted literature review and knowledge synthesis",
-        "Machine learning for data analysis across disciplines",
-        "Ethical considerations in AI-augmented research",
-        "Predictive modeling for complex systems",
+        "AI-facilitated knowledge synthesis across disciplines",
+        "Machine learning for cross-disciplinary data analysis",
+        "Ethical considerations in AI-augmented collaborative research",
+        "Natural language processing for interdisciplinary communication",
       ],
     },
     {
-      title: "Digital Twins and Simulation",
+      title: "Visualization and Simulation",
       subtopics: [
-        "Creating digital twins of physical research environments",
-        "Simulation techniques for hypothesis testing",
-        "Real-time data integration with virtual models",
-        "Applications in urban planning, healthcare, and engineering",
+        "Data visualization techniques for complex interdisciplinary datasets",
+        "Simulation models for testing cross-disciplinary hypotheses",
+        "Real-time collaborative modeling and visualization",
+        "Applications in healthcare, climate science, and social systems",
       ],
     },
     {
-      title: "Ethics and Governance",
+      title: "Ethics and Inclusion",
       subtopics: [
-        "Ethical frameworks for virtual research",
-        "Data privacy and security in collaborative environments",
-        "Governance models for multidisciplinary projects",
-        "Inclusivity and accessibility in virtual research spaces",
+        "Ethical frameworks for virtual interdisciplinary research",
+        "Addressing power imbalances across disciplinary boundaries",
+        "Global inclusion and accessibility in virtual forums",
+        "Equitable participation models for diverse knowledge systems",
       ],
     },
   ]
@@ -67,7 +67,7 @@ export default function ThemeAndTopics() {
         <div className="container mx-auto px-4">
           <div className="text-center mb-16 max-w-3xl mx-auto">
             <div className="inline-flex items-center rounded-full border border-purple-400/30 bg-purple-500/10 px-4 py-1.5 text-sm font-medium text-purple-200 backdrop-blur-md mb-6">
-              <span>MetaConnect 2025</span>
+              <span>NextGenSynergy 2025</span>
               <ChevronRight className="ml-1 h-4 w-4" />
             </div>
 
@@ -77,7 +77,7 @@ export default function ThemeAndTopics() {
 
             <div className="h-1 w-20 bg-gradient-to-r from-cyan-400 to-fuchsia-400 mx-auto mb-8 rounded-full"></div>
 
-            <p className="text-lg text-purple-100/90">Explore the research areas and themes for MetaConnect 2025</p>
+            <p className="text-lg text-purple-100/90">Explore the research areas and themes for NextGenSynergy 2025</p>
           </div>
         </div>
       </section>
@@ -96,21 +96,21 @@ export default function ThemeAndTopics() {
 
                 <div className="space-y-6 text-purple-100/90">
                   <p className="text-xl font-medium text-transparent bg-clip-text bg-gradient-to-r from-cyan-300 to-fuchsia-300">
-                    "Bridging Worlds: The Future of Multidisciplinary Research in Virtual Environments"
+                    "Converging Perspectives: Advancing Interdisciplinary Research in Virtual Spaces"
                   </p>
 
                   <p>
-                    MetaConnect 2025 explores how virtual environments are transforming the landscape of
-                    multidisciplinary research. As traditional boundaries between academic disciplines continue to
-                    dissolve, new technologies are enabling unprecedented forms of collaboration and discovery.
+                    NextGenSynergy 2025 explores how virtual forums are revolutionizing interdisciplinary research and
+                    collaboration. As traditional boundaries between academic fields continue to blur, digital
+                    technologies are enabling unprecedented opportunities for knowledge integration and discovery.
                   </p>
 
                   <p>
-                    This conference brings together researchers, technologists, and visionaries to examine the current
-                    state and future potential of virtual research environments. We invite contributions that showcase
-                    innovative approaches to multidisciplinary collaboration, novel applications of virtual and
-                    augmented reality in research, and critical perspectives on the ethical and methodological
-                    implications of these emerging technologies.
+                    This virtual forum brings together researchers, innovators, and thought leaders from diverse disciplines
+                    to examine the current state and future possibilities of virtual interdisciplinary collaboration. 
+                    We invite contributions that highlight innovative approaches to crossing disciplinary boundaries, 
+                    novel applications of digital tools for collaborative research, and critical perspectives on the 
+                    methodological and ethical implications of these emerging collaborative frameworks.
                   </p>
                 </div>
               </div>
@@ -201,7 +201,7 @@ export default function ThemeAndTopics() {
                         <h3 className="text-xl font-medium text-white mb-2">Prepare Your Abstract</h3>
                         <p className="text-purple-100/80">
                           Submit a 300-word abstract outlining your research question, methodology, findings, and
-                          relevance to the conference theme.
+                          relevance to the interdisciplinary forum theme.
                         </p>
                       </div>
                     </div>
@@ -213,7 +213,7 @@ export default function ThemeAndTopics() {
                       <div>
                         <h3 className="text-xl font-medium text-white mb-2">Abstract Review</h3>
                         <p className="text-purple-100/80">
-                          Abstracts will be reviewed by our scientific committee. If accepted, you'll be invited to
+                          Abstracts will be reviewed by our interdisciplinary committee. If accepted, you'll be invited to
                           submit a full paper.
                         </p>
                       </div>
@@ -227,7 +227,7 @@ export default function ThemeAndTopics() {
                         <h3 className="text-xl font-medium text-white mb-2">Full Paper Submission</h3>
                         <p className="text-purple-100/80">
                           Submit your full paper (8-12 pages) following our formatting guidelines. All papers will
-                          undergo a double-blind peer review.
+                          undergo a double-blind peer review by experts from relevant disciplines.
                         </p>
                       </div>
                     </div>
@@ -237,43 +237,14 @@ export default function ThemeAndTopics() {
                         4
                       </div>
                       <div>
-                        <h3 className="text-xl font-medium text-white mb-2">Presentation</h3>
+                        <h3 className="text-xl font-medium text-white mb-2">Virtual Presentation</h3>
                         <p className="text-purple-100/80">
-                          Accepted papers will be presented at the conference either as oral presentations or posters,
-                          depending on the scientific committee's recommendation.
+                          Accepted papers will be presented in our virtual environment either as interactive sessions or digital posters,
+                          depending on the committee's recommendation.
                         </p>
                       </div>
                     </div>
                   </div>
-
-                  {/* <div className="bg-purple-900/40 backdrop-blur-sm rounded-xl border border-purple-400/20 p-6 mt-8">
-                    <div className="flex items-center gap-3 mb-4">
-                      <FileText className="h-6 w-6 text-cyan-400" />
-                      <h3 className="text-lg font-medium text-white">Important Dates</h3>
-                    </div>
-
-                    <div className="grid grid-cols-1 md:grid-cols-2 gap-4">
-                      <div className="flex justify-between">
-                        <span className="text-purple-100/80">Abstract Submission Deadline:</span>
-                        <span className="text-white font-medium">January 15, 2025</span>
-                      </div>
-
-                      <div className="flex justify-between">
-                        <span className="text-purple-100/80">Abstract Acceptance Notification:</span>
-                        <span className="text-white font-medium">February 15, 2025</span>
-                      </div>
-
-                      <div className="flex justify-between">
-                        <span className="text-purple-100/80">Full Paper Submission Deadline:</span>
-                        <span className="text-white font-medium">April 1, 2025</span>
-                      </div>
-
-                      <div className="flex justify-between">
-                        <span className="text-purple-100/80">Final Acceptance Notification:</span>
-                        <span className="text-white font-medium">May 1, 2025</span>
-                      </div>
-                    </div>
-                  </div> */}
                 </div>
               </div>
             </div>

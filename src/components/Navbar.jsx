@@ -122,7 +122,7 @@ export default function Navbar() {
               className="text-2xl font-bold tracking-wider text-white"
             >
               <span className="text-transparent bg-clip-text bg-gradient-to-r from-blue-400 via-purple-500 to-pink-500">
-                METACONNECT
+              NextGen Synergy
               </span>
               <span className="relative ml-1 inline-block">
                 <span className="absolute -top-1 -right-1 w-2 h-2 rounded-full bg-cyan-400 animate-pulse"></span>

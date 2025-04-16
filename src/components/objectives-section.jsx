@@ -19,37 +19,37 @@ export function ObjectivesSection() {
                 <div className="h-1 w-20 bg-gradient-to-r from-cyan-400 to-fuchsia-400 mx-auto mb-8 rounded-full"></div>
 
                 <p className="text-lg text-purple-100/90 max-w-2xl mx-auto">
-                  MetaConnect aims to revolutionize how researchers collaborate across disciplines by leveraging virtual
-                  environments and emerging technologies.
+                  NextGenSynergy aims to revolutionize how researchers collaborate across disciplines through our virtual 
+                  platform, breaking traditional boundaries and fostering innovative approaches to complex problems.
                 </p>
               </div>
 
               <div className="grid grid-cols-1 md:grid-cols-2 gap-8">
                 <ObjectiveCard
                   icon={<Target className="h-10 w-10" />}
-                  title="Foster Interdisciplinary Collaboration"
-                  description="Break down silos between academic disciplines by creating virtual spaces where researchers from diverse fields can collaborate on complex problems."
+                  title="Bridge Academic Disciplines"
+                  description="Create an inclusive virtual space where researchers, educators, and practitioners from diverse fields can engage in meaningful dialogue and collaborative problem-solving."
                   gradient="from-cyan-400 to-blue-500"
                 />
 
                 <ObjectiveCard
                   icon={<Lightbulb className="h-10 w-10" />}
-                  title="Accelerate Innovation"
-                  description="Provide a platform for sharing cutting-edge research methodologies and technologies that can accelerate scientific discovery across multiple domains."
+                  title="Catalyze Breakthrough Ideas"
+                  description="Provide a platform for sharing methodological innovations and cross-disciplinary approaches that can transform how we address complex research questions and societal challenges."
                   gradient="from-fuchsia-400 to-purple-500"
                 />
 
                 <ObjectiveCard
                   icon={<Handshake className="h-10 w-10" />}
-                  title="Build Global Research Networks"
-                  description="Connect researchers, institutions, and industry partners to form lasting collaborations that transcend geographical and disciplinary boundaries."
+                  title="Democratize Knowledge Exchange"
+                  description="Leverage virtual spaces to connect thought leaders and emerging scholars globally, eliminating geographical barriers and fostering inclusive participation across institutional settings."
                   gradient="from-purple-400 to-indigo-500"
                 />
 
                 <ObjectiveCard
                   icon={<Globe className="h-10 w-10" />}
-                  title="Address Complex Global Challenges"
-                  description="Harness collective expertise to tackle pressing global issues that require multidisciplinary approaches, from climate change to public health."
+                  title="Address Systemic Global Challenges"
+                  description="Harness collective expertise from multiple disciplines to develop integrated approaches to pressing global issues that require diverse perspectives, from sustainability to social equity."
                   gradient="from-pink-400 to-fuchsia-500"
                 />
               </div>
@@ -57,7 +57,7 @@ export function ObjectivesSection() {
               <div className="mt-16 text-center">
                 <div className="inline-flex items-center justify-center p-1 rounded-full bg-gradient-to-r from-cyan-400 via-purple-400 to-fuchsia-400">
                   <div className="px-6 py-2 rounded-full bg-purple-900/70 backdrop-blur-sm text-white font-medium">
-                    Join us in shaping the future of research
+                    Join us in redefining interdisciplinary collaboration
                   </div>
                 </div>
               </div>
@@ -68,8 +68,6 @@ export function ObjectivesSection() {
     </section>
   )
 }
-
-
 
 function ObjectiveCard({ icon, title, description, gradient }) {
   return (
@@ -97,4 +95,3 @@ function ObjectiveCard({ icon, title, description, gradient }) {
     </div>
   )
 }
-

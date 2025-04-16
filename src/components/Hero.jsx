@@ -27,11 +27,10 @@ export default function Hero() {
               </div>
 
               <h1 className="text-5xl md:text-7xl font-bold tracking-tighter text-transparent bg-clip-text bg-gradient-to-r from-cyan-300 via-white to-fuchsia-300">
-                META<span className="text-white">CONNECT</span>
+              NextGen<span className="text-white">Synergy</span>
               </h1>
-
               <h2 className="text-2xl md:text-3xl font-light tracking-wide text-white">
-                THE FUTURE OF <span className="text-fuchsia-400 font-medium">MULTIDISCIPLINARY RESEARCH</span>
+              The Virtual  <span className="text-fuchsia-400 font-medium">Interdisciplinary Forum </span>
               </h2>
 
               <p className="text-lg text-purple-100/80 max-w-md">

@@ -1,7 +1,7 @@
 import Link from "next/link"
 import Image from "next/image"
 import { Button } from "@/components/ui/button"
-import { Calendar, MapPin, ChevronRight, Target, Globe, Award } from "lucide-react"
+import { Calendar, MapPin, ChevronRight, Target, Globe, Award, Videotape, CameraIcon } from "lucide-react"
 
 export default function AboutOrganizers() {
   return (
@@ -11,7 +11,7 @@ export default function AboutOrganizers() {
         <div className="container mx-auto px-4">
           <div className="text-center mb-16 max-w-3xl mx-auto">
             <div className="inline-flex items-center rounded-full border border-purple-400/30 bg-purple-500/10 px-4 py-1.5 text-sm font-medium text-purple-200 backdrop-blur-md mb-6">
-              <span>MetaConnect 2025</span>
+              <span>NextGen Synergy 2025</span>
               <ChevronRight className="ml-1 h-4 w-4" />
             </div>
 
@@ -22,7 +22,7 @@ export default function AboutOrganizers() {
             <div className="h-1 w-20 bg-gradient-to-r from-cyan-400 to-fuchsia-400 mx-auto mb-8 rounded-full"></div>
 
             <p className="text-lg text-purple-100/90">
-              Learn about Zep Research, the organization behind MetaConnect 2025
+              Learn about Zep Research, the organization behind NextGen Synergy 2025
             </p>
           </div>
         </div>
@@ -202,7 +202,7 @@ export default function AboutOrganizers() {
       {/* Venue & Date Card */}
       <section className="py-10 pb-20">
         <div className="container mx-auto px-4">
-          <div className="max-w-3xl mx-auto">
+          <div className="max-w-4xl mx-auto">
             <div className="relative backdrop-blur-sm bg-purple-900/30 rounded-2xl border border-purple-400/20 overflow-hidden p-6">
               <div className="absolute -inset-px rounded-2xl bg-gradient-to-r from-purple-500/20 via-transparent to-cyan-500/20 opacity-50"></div>
 
@@ -215,19 +215,19 @@ export default function AboutOrganizers() {
                   </div>
                   <div>
                     <p className="text-sm text-purple-100/70">Date</p>
-                    <p className="text-white font-medium">June 15-17, 2025</p>
+                    <p className="text-white font-medium">July 17th-18th, 2025</p>
                   </div>
                 </div>
 
                 <div className="flex items-center gap-4">
                   <div className="flex h-12 w-12 shrink-0 items-center justify-center rounded-xl bg-gradient-to-br from-fuchsia-500 to-purple-600 p-0.5">
                     <div className="flex h-full w-full items-center justify-center rounded-lg bg-purple-900/70">
-                      <MapPin className="h-6 w-6 text-fuchsia-400" />
+                      <CameraIcon className="h-6 w-6 text-fuchsia-400" />
                     </div>
                   </div>
                   <div>
-                    <p className="text-sm text-purple-100/70">Venue</p>
-                    <p className="text-white font-medium">Tech Innovation Center, San Francisco</p>
+                    <p className="text-sm text-purple-100/70">Format</p>
+                    <p className="text-white font-medium">Fully Virtual - Accessible Worldwide</p>
                   </div>
                 </div>
 

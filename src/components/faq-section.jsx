@@ -108,7 +108,7 @@ export function FaqSection() {
                     </div>
                     <div>
                       <p className="text-sm text-purple-100/70">Email</p>
-                      <p className="text-white">info@nextgensynergy.org</p>
+                      <p className="text-white">info@thenextgensynergy.com</p>
                     </div>
                   </div>
                   
@@ -118,7 +118,7 @@ export function FaqSection() {
                     </div>
                     <div>
                       <p className="text-sm text-purple-100/70">Support Hotline</p>
-                      <p className="text-white">+1 (800) 555-0123</p>
+                      <p className="text-white ">+91  78488  54815</p>
                     </div>
                   </div>
                   
@@ -127,8 +127,8 @@ export function FaqSection() {
                       <Globe size={20} />
                     </div>
                     <div>
-                      <p className="text-sm text-purple-100/70">Virtual Platform</p>
-                      <p className="text-white">platform.nextgensynergy.org</p>
+                      <p className="text-sm text-purple-100/70">Organizer</p>
+                      <p className="text-white">zepresearch.com</p>
                     </div>
                   </div>
                 </div>

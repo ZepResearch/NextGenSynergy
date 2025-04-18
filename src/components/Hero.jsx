@@ -34,10 +34,28 @@ export default function Hero() {
               </h2>
 
               <p className="text-lg text-purple-100/80 max-w-md">
-                We bring together the brightest minds across disciplines to forge new connections between virtual worlds
-                and scientific discovery.
+              Welcome to the Nextgen Synergy Conference — where the brightest minds, boldest ideas, and breakthrough technologies converge.
+
               </p>
 
+              <div className="flex sm:flex-row flex-col-reverse  items-start sm:items-center justify-center gap-3 px-4 max-w-2xl  backdrop-blur-sm bg-gray-50/30 py-4 rounded-3xl">
+              <img
+                src="/assets/scopus.png"
+                alt=""
+                className="h-12 drop-shadow-lg"
+              />
+              <img
+                src="/assets/clarivate.png"
+                alt=""
+                className="h-12 drop-shadow-lg"
+              />
+
+              <img
+                src="assets/zepresearch.png"
+                alt=""
+                className="h-12 drop-shadow-lg"
+              />
+            </div>
               <div className="flex flex-wrap gap-4">
                 <Button className="bg-gradient-to-r from-fuchsia-600 to-purple-600 hover:from-fuchsia-500 hover:to-purple-500 text-white border-0 rounded-lg px-8 py-6 text-lg">
                   Register Now

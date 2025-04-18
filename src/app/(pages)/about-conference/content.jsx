@@ -204,10 +204,10 @@ export default function AboutConference() {
                       1
                     </div>
                     <div>
-                      <h3 className="text-xl font-medium text-white mb-2">Expand Your Research Horizons</h3>
+                      <h3 className="text-xl font-medium text-white mb-2">Unparalleled Insights</h3>
                       <p className="text-purple-100/80">
-                        Discover new methodologies, technologies, and perspectives that can enhance your research and
-                        open up new avenues of inquiry—no travel required.
+                      Learn from world-renowned speakers, top CEOs, groundbreaking researchers, and visionary artists shaping the next frontier.
+
                       </p>
                     </div>
                   </div>
@@ -217,10 +217,10 @@ export default function AboutConference() {
                       2
                     </div>
                     <div>
-                      <h3 className="text-xl font-medium text-white mb-2">Form Global Connections</h3>
+                      <h3 className="text-xl font-medium text-white mb-2">Hands-on Innovation</h3>
                       <p className="text-purple-100/80">
-                        Network with researchers from diverse fields around the world who share your passion for
-                        innovation and collaboration.
+                      Participate in live demos, interactive workshops, and solution labs where ideas become action.
+
                       </p>
                     </div>
                   </div>
@@ -230,10 +230,10 @@ export default function AboutConference() {
                       3
                     </div>
                     <div>
-                      <h3 className="text-xl font-medium text-white mb-2">Stay at the Cutting Edge</h3>
+                      <h3 className="text-xl font-medium text-white mb-2">Global Networking                      </h3>
                       <p className="text-purple-100/80">
-                        Learn about the latest advancements in virtual collaboration tools and how they're
-                        transforming interdisciplinary research.
+                      Meet the partners, investors, collaborators, and mentors who can transform your vision into reality.
+
                       </p>
                     </div>
                   </div>
@@ -243,10 +243,10 @@ export default function AboutConference() {
                       4
                     </div>
                     <div>
-                      <h3 className="text-xl font-medium text-white mb-2">Showcase Your Work</h3>
+                      <h3 className="text-xl font-medium text-white mb-2">Nextgen Awards Gala</h3>
                       <p className="text-purple-100/80">
-                        Present your research to a diverse, global audience and receive valuable feedback from experts
-                        across disciplines through our virtual presentation platforms.
+                      Celebrate the innovators redefining industries and communities across the globe.
+
                       </p>
                     </div>
                   </div>
@@ -272,17 +272,17 @@ export default function AboutConference() {
                 <div className="grid grid-cols-1 md:grid-cols-2 gap-6">
                   {[
                     {
-                      title: "Academic Researchers",
+                      title: "Researchers and industry experts",
                       description: "Faculty, postdoctoral researchers, and graduate students from all disciplines",
                       gradient: "from-cyan-400 to-blue-500",
                     },
                     {
-                      title: "Industry Professionals",
+                      title: "Business and technology leaders",
                       description: "R&D specialists, technology developers, and innovation leaders",
                       gradient: "from-fuchsia-400 to-purple-500",
                     },
                     {
-                      title: "Technology Enthusiasts",
+                      title: "Interdisciplinary forum participants",
                       description: "Those interested in the future of virtual collaboration and research",
                       gradient: "from-purple-400 to-indigo-500",
                     },

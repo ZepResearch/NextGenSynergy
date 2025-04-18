@@ -43,20 +43,13 @@ export default function AboutOrganizers() {
 
                   <div className="space-y-6 text-purple-100/90">
                     <p>
-                      Zep Research is a global leader in advancing academic excellence and fostering innovation.
-                      Specializing in organizing impactful conferences, research initiatives, and collaboration
-                      opportunities, Zep Research creates dynamic environments where researchers, academics, and
-                      industry professionals come together to share knowledge, exchange ideas, and collaborate on
-                      groundbreaking work across various industries.
+                    Zep Research is a global leader in advancing academic excellence and fostering innovation. Specializing in organizing impactful conferences, research initiatives, and collaboration opportunities, Zep Research creates dynamic environments where researchers, academics, and industry professionals come together to share knowledge, exchange ideas, and collaborate on groundbreaking work across various industries.
+
                     </p>
 
                     <p>
-                      With a commitment to providing a platform for high-quality research dissemination, Zep Research
-                      enables individuals and institutions to engage in meaningful discussions about emerging trends,
-                      challenges, and solutions. The focus spans diverse fields such as tourism, hospitality, education,
-                      sustainability, and technology. By connecting experts, thought leaders, and innovators, Zep
-                      Research drives progress and fosters advancements that leave a lasting impact on both academia and
-                      industry.
+                    With a commitment to providing a platform for high-quality research dissemination, Zep Research enables individuals and institutions to engage in meaningful discussions about emerging trends, challenges, and solutions. The focus spans diverse fields such as tourism, hospitality, education, sustainability, and technology. By connecting experts, thought leaders, and innovators, Zep Research drives progress and fosters advancements that leave a lasting impact on both academia and industry.
+
                     </p>
                   </div>
                 </div>
@@ -64,19 +57,19 @@ export default function AboutOrganizers() {
                 <div className="lg:col-span-2">
                   <div className="relative h-[300px] w-full rounded-2xl overflow-hidden border border-purple-400/20">
                     <Image
-                      src="/placeholder.svg?height=300&width=400"
+                      src="/assets/aboutzep.png?height=300&width=400"
                       alt="Zep Research team"
                       fill
-                      className="object-cover"
+                      className="object-cover drop-shadow-2xl"
                     />
-                    <div className="absolute inset-0 bg-gradient-to-t from-blue-900/80 to-transparent"></div>
+                    <div className="absolute inset-0 bg-gradient-to-t from-blue-900/20 to-transparent"></div>
 
                     {/* Floating elements */}
-                    <div className="absolute top-1/4 right-1/4 h-12 w-12 rounded-full bg-cyan-400 blur-xl opacity-70 animate-pulse"></div>
+                    {/* <div className="absolute top-1/4 right-1/4 h-12 w-12 rounded-full bg-cyan-400 blur-xl opacity-70 animate-pulse"></div>
                     <div
                       className="absolute bottom-1/3 left-1/3 h-16 w-16 rounded-full bg-fuchsia-400 blur-xl opacity-70 animate-pulse"
                       style={{ animationDelay: "1s" }}
-                    ></div>
+                    ></div> */}
                   </div>
                 </div>
               </div>
@@ -106,17 +99,15 @@ export default function AboutOrganizers() {
 
                 <div className="space-y-6 text-purple-100/90">
                   <p>
-                    Zep Research, in partnership with the International Conference on Sustainable Tourism and
-                    Hospitality Management, is committed to driving innovation and fostering collaboration within the
-                    tourism and hospitality industries. The mission is to create a platform for global knowledge
-                    exchange, promote sustainable practices, and highlight emerging trends and solutions.
+                  At ZEP Research, our mission for the NextGen Synergy Conference is to ignite innovation, foster cross-disciplinary collaboration, and accelerate breakthroughs that shape the future. We believe that the most transformative ideas emerge when diverse minds come together — researchers, technologists, entrepreneurs, and visionaries alike.
+
                   </p>
 
                   <p>
-                    By connecting industry leaders, researchers, and professionals, the goal is to inspire progress,
-                    share valuable insights, and contribute to the growth and sustainability of tourism and hospitality.
-                    Through impactful conferences and research initiatives, this mission aims to shape a more innovative
-                    and resilient future for the global tourism industry.
+                 
+NextGen Synergy is more than a conference; it’s a catalyst for real-world impact. Our goal is to create a dynamic space where ideas are exchanged openly, partnerships are formed organically, and emerging talents are empowered to lead the next wave of global innovation. Together, we’re building a future driven by synergy, curiosity, and a bold commitment to progress. 
+
+
                   </p>
 
                   <div className="grid grid-cols-1 md:grid-cols-3 gap-6 mt-8">

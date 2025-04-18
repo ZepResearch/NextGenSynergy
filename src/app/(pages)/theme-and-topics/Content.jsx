@@ -14,48 +14,48 @@ export default function ThemeAndTopics() {
 
   const topics = [
     {
-      title: "Virtual Collaboration Tools",
+      title: "Future of Technology and Innovation",
       subtopics: [
-        "Designing effective virtual research and collaboration spaces",
-        "Synchronous and asynchronous tools for interdisciplinary teamwork",
-        "Virtual whiteboards and idea visualization platforms",
-        "Data sharing and co-editing in real-time environments",
+        "Emerging Tech Trends (AI, Blockchain, Quantum Computing)",
+        "The Role of 5G and Beyond in Smart Connectivity",
+        "Sustainability and Green Tech Innovations",
+        "The Rise of Spatial Computing and Immersive Experiences (AR/VR/XR)",
       ],
     },
     {
-      title: "Interdisciplinary Research Methods",
+      title: "Next-Generation Leadership",
       subtopics: [
-        "Bridging methodological gaps between disciplines",
-        "Creating common language and frameworks across fields",
-        "Novel approaches to interdisciplinary problem-solving",
-        "Case studies of successful interdisciplinary virtual collaborations",
+        "Leading in a Disruptive World",
+        "Building Adaptive and Resilient Teams",
+        "Diversity, Equity, and Inclusion for the Future",
+        "Mindful Leadership: Emotional Intelligence at Scale",
       ],
     },
     {
-      title: "AI-Enhanced Collaboration",
+      title: "Data, Cybersecurity and Trust",
       subtopics: [
-        "AI-facilitated knowledge synthesis across disciplines",
-        "Machine learning for cross-disciplinary data analysis",
-        "Ethical considerations in AI-augmented collaborative research",
-        "Natural language processing for interdisciplinary communication",
+        "Data-Driven Decision Making for 2030",
+        "Building Cyber-Resilient Organizations",
+        "Digital Identity and Trust Frameworks",
+        "Navigating the Ethics of Data and AI",
       ],
     },
     {
-      title: "Visualization and Simulation",
+      title: "Sustainability and Impact",
       subtopics: [
-        "Data visualization techniques for complex interdisciplinary datasets",
-        "Simulation models for testing cross-disciplinary hypotheses",
-        "Real-time collaborative modeling and visualization",
-        "Applications in healthcare, climate science, and social systems",
+        "ESG (Environmental, Social, Governance) in Action",
+        "Climate Tech: Innovations Saving the Planet",
+        "Corporate Responsibility and the Circular Economy",
+        "Measuring Impact Beyond Profit",
       ],
     },
     {
-      title: "Ethics and Inclusion",
+      title: "Social Innovation & Global Impact",
       subtopics: [
-        "Ethical frameworks for virtual interdisciplinary research",
-        "Addressing power imbalances across disciplinary boundaries",
-        "Global inclusion and accessibility in virtual forums",
-        "Equitable participation models for diverse knowledge systems",
+        "Community Resilience & Policy Innovation",
+        "Interdisciplinary Approaches to Inequality",
+        "Youth Empowerment & Civic Tech",
+        "Migration, Identity & Global Mobility",
       ],
     },
   ]

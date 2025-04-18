@@ -20,10 +20,8 @@ export function AboutSection() {
               <div className="h-1 w-20 bg-gradient-to-r from-cyan-400 to-fuchsia-400 mx-auto mb-8 rounded-full"></div>
 
               <p className="text-lg text-purple-100/90 mb-8">
-                NextGenSynergy brings together researchers, technologists, and visionaries to explore interdisciplinary 
-                approaches to today's most pressing challenges. Join us for two days of groundbreaking presentations, 
-                workshops, and networking opportunities that will foster collaboration across diverse academic and 
-                professional fields.
+              In a world where change is the only constant, Nextgen Synergy is your catalyst for transformation. Designed for industry leaders, visionary entrepreneurs, tech pioneers, and change-makers, this conference ignites collaboration across industries — driving innovation that makes a real impact. From cutting-edge AI and sustainable technologies to leadership strategies and the future of work, every session is built to inspire, challenge, and empower.
+
               </p>
 
               <div className="grid grid-cols-1 md:grid-cols-3 gap-6 mb-10">
@@ -50,7 +48,7 @@ export function AboutSection() {
                 asChild
                 className="bg-gradient-to-r from-cyan-600 to-fuchsia-600 hover:from-cyan-500 hover:to-fuchsia-500 text-white border-0 rounded-lg px-8 py-6 text-lg group"
               >
-                <Link href="/about">
+                <Link href="/about-conference">
                   Learn More About NextGenSynergy
                   <ArrowRight className="ml-2 h-5 w-5 transition-transform group-hover:translate-x-1" />
                 </Link>

@@ -14,6 +14,7 @@ import {
   DropdownMenuTrigger,
 } from "@/components/ui/dropdown-menu"
 import { Sheet, SheetContent, SheetTrigger } from "@/components/ui/sheet"
+import Image from "next/image"
 
 const navLinks = [
   {
@@ -60,10 +61,10 @@ const navLinks = [
     title: "SUBMISSION",
     href: "/submission",
   },
-  {
-    title: "VENUE",
-    href: "/venue",
-  },
+  // {
+  //   title: "VENUE",
+  //   href: "/venue",
+  // },
   {
     title: "AWARDS",
     href: "/awards",
@@ -114,19 +115,15 @@ export default function Navbar() {
       <div className="container mx-auto px-4">
         <div className="flex items-center justify-between h-20">
           {/* Logo */}
-          <Link href="/" className="flex items-center">
+          <Link href="/" className="flex items-center justify-center mt-1">
             <motion.div
               initial={{ opacity: 0, x: -20 }}
               animate={{ opacity: 1, x: 0 }}
               transition={{ duration: 0.5 }}
               className="text-2xl font-bold tracking-wider text-white"
             >
-              <span className="text-transparent bg-clip-text bg-gradient-to-r from-blue-400 via-purple-500 to-pink-500">
-              NextGen Synergy
-              </span>
-              <span className="relative ml-1 inline-block">
-                <span className="absolute -top-1 -right-1 w-2 h-2 rounded-full bg-cyan-400 animate-pulse"></span>
-              </span>
+              <Image src={'/Logox.svg'} className="drop-shadow-2xl " alt="logo" height={170} width={170}/>
+             
             </motion.div>
           </Link>
 

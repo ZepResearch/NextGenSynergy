@@ -22,10 +22,10 @@ export function JournalCard({ journal, index, pocketbaseUrl }) {
       <div className="absolute inset-0 bg-gradient-to-r from-cyan-500/20 to-fuchsia-500/20 rounded-2xl blur-lg opacity-0 group-hover:opacity-70 transition-opacity"></div>
 
       <div className="relative backdrop-blur-sm bg-purple-900/20 rounded-2xl border border-purple-400/20 overflow-hidden h-full transition-all group-hover:bg-purple-900/30">
-        <div className="absolute top-0 left-0 right-0 h-2 bg-gradient-to-r from-cyan-500 to-fuchsia-500"></div>
+        {/* <div className="absolute top-0 left-0 right-0 h-2 bg-gradient-to-r from-cyan-500 to-fuchsia-500"></div> */}
 
         <div className="p-6 flex flex-col h-full">
-          <div className="relative h-[400px] w-full mb-6 overflow-hidden rounded-xl border border-purple-500/30">
+          <div className="relative h-[300px] w-full mb-6 overflow-hidden rounded-xl border border-purple-500/30">
             <Image
               src={imageUrl || "/placeholder.svg"}
               alt={journal.title || "Journal cover"}
@@ -36,7 +36,7 @@ export function JournalCard({ journal, index, pocketbaseUrl }) {
                 e.currentTarget.src = "/placeholder.svg?height=300&width=200"
               }}
             />
-            <div className="absolute inset-0 bg-gradient-to-t from-purple-900/80 to-transparent"></div>
+            {/* <div className="absolute inset-0 bg-gradient-to-t from-purple-900/80 to-transparent"></div> */}
           </div>
 
           <h3 className="text-xl font-bold text-white mb-2 line-clamp-2">{journal.title}</h3>

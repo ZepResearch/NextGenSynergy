@@ -12,9 +12,17 @@ export default function RegistrationPage() {
   const [selectedTicket, setSelectedTicket] = useState(null)
   const [isPaymentFormOpen, setIsPaymentFormOpen] = useState(false)
   const [isLoading, setIsLoading] = useState(false)
-
   const handleTicketSelect = (ticket) => {
-    setSelectedTicket(ticket)
+    // Recalculate tax and total to ensure consistency
+    const taxAmount = Number((ticket.price * ticket.taxRate).toFixed(2))
+    const totalAmount = Number((ticket.price + taxAmount).toFixed(2))
+    
+    // Set selectedTicket with properly calculated values
+    setSelectedTicket({
+      ...ticket,
+      taxAmount: taxAmount,
+      totalAmount: totalAmount
+    })
     setIsPaymentFormOpen(true)
   }
 
@@ -310,6 +318,7 @@ export default function RegistrationPage() {
                         category: category.category,
                         name: option.name,
                         price: option.price,
+                        taxRate: option.taxRate,
                         taxAmount,
                         totalAmount,
                         currency: category.currency,
@@ -388,15 +397,15 @@ export default function RegistrationPage() {
 
       {/* Payment Form Dialog */}
       <CCavenuePaymentForm
-        isOpen={isPaymentFormOpen}
-        onClose={handlePaymentFormClose}
-        ticketName={selectedTicket?.name}
-        amount={selectedTicket?.price || 0}
-        taxRate={selectedTicket?.taxRate || 0}
-        currency={selectedTicket?.currency || "USD"}
-        onSubmit={handlePaymentFormSubmit}
-        isLoading={isLoading}
-      />
+  isOpen={isPaymentFormOpen}
+  onClose={handlePaymentFormClose}
+  ticketName={selectedTicket?.name}
+  amount={selectedTicket?.price || 0}
+  taxRate={selectedTicket?.taxRate || 0}
+  currency={selectedTicket?.currency || "USD"}
+  onSubmit={handlePaymentFormSubmit}
+  isLoading={isLoading}
+/>
     </main>
   )
 }

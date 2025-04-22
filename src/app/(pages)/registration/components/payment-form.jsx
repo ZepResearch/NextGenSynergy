@@ -21,10 +21,12 @@ export function CCavenuePaymentForm({ isOpen, onClose, ticketName, amount, taxRa
     billing_designation: "",
   })
 
-  // Calculate tax amount and total - ensure we're using the correct tax rate
-  const taxAmount = Number.parseFloat((amount * taxRate).toFixed(2))
-  const totalAmount = Number.parseFloat((amount + taxAmount).toFixed(2))
+  // Calculate tax amount and total - ensure proper calculation and decimal precision
+  const taxAmount = Number((amount * taxRate).toFixed(2))
+  const totalAmount = Number((amount + taxAmount).toFixed(2))
 
+
+  
   const handleChange = (e) => {
     setFormData({ ...formData, [e.target.name]: e.target.value })
   }

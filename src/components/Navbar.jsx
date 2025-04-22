@@ -61,10 +61,10 @@ const navLinks = [
     title: "SUBMISSION",
     href: "/submission",
   },
-  // {
-  //   title: "VENUE",
-  //   href: "/venue",
-  // },
+  {
+    title: "JOURNALS",
+    href: "/journals",
+  },
   {
     title: "AWARDS",
     href: "/awards",

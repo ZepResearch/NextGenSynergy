@@ -209,7 +209,7 @@ export default function Footer() {
         
             <Link href="/privacy-policy" className="text-pink-500 drop-shadow-2xl">Privacy Policy</Link>
             <span className="text-purple-200/60">|</span>
-            <Link href="/terms-of-service" className="text-pink-500 drop-shadow-2xl">Terms & Condition</Link>    
+            <Link href="/terms-and-conditions" className="text-pink-500 drop-shadow-2xl">Terms & Condition</Link>    
             <span className="text-purple-200/60">|</span>     
             <Link href="/cancellation-policy" className="text-pink-500 drop-shadow-2xl">Cancellation Policy</Link>  
 

@@ -1,5 +1,5 @@
 import React from 'react'
-import CancellationPolicy from './content'
+import CancellationPolicy from './Content'
 
 export const metadata = {
   title: "Cancellation Policy | NextGenSynergy: The Virtual Interdisciplinary Forum",

@@ -1,6 +1,17 @@
 import Image from "next/image"
 import { Button } from "@/components/ui/button"
-import { ChevronRight, MapPin, Navigation, Building, Coffee, Utensils, Landmark, Trees } from "lucide-react"
+import {
+  ChevronRight,
+  MapPin,
+  Navigation,
+  Building,
+  Utensils,
+  Landmark,
+  Trees,
+  ShoppingBag,
+  Palette,
+} from "lucide-react"
+import Link from "next/link"
 
 export default function Venue() {
   return (
@@ -10,7 +21,7 @@ export default function Venue() {
         <div className="container mx-auto px-4">
           <div className="text-center mb-16 max-w-3xl mx-auto">
             <div className="inline-flex items-center rounded-full border border-purple-400/30 bg-purple-500/10 px-4 py-1.5 text-sm font-medium text-purple-200 backdrop-blur-md mb-6">
-              <span>MetaConnect 2025</span>
+              <span>NextGenSynergy 2025</span>
               <ChevronRight className="ml-1 h-4 w-4" />
             </div>
 
@@ -20,7 +31,7 @@ export default function Venue() {
 
             <div className="h-1 w-20 bg-gradient-to-r from-cyan-400 to-fuchsia-400 mx-auto mb-8 rounded-full"></div>
 
-            <p className="text-lg text-purple-100/90">Join us at the Tech Innovation Center in San Francisco</p>
+            <p className="text-lg text-purple-100/90">Join us at The Lalit New Delhi</p>
           </div>
         </div>
       </section>
@@ -47,9 +58,9 @@ export default function Venue() {
 
                   <div className="space-y-6 text-purple-100/90">
                     <p>
-                      The Tech Innovation Center is San Francisco's premier venue for technology conferences and events.
-                      Located in the heart of the city's innovation district, this state-of-the-art facility offers
-                      cutting-edge amenities and a dynamic environment perfect for MetaConnect 2025.
+                      The Lalit New Delhi is one of the city's premier luxury hotels and conference venues. Located in
+                      the heart of Connaught Place, this 5-star property offers world-class facilities and an elegant
+                      environment perfect for NextGenSynergy 2025.
                     </p>
 
                     <div className="space-y-4">
@@ -60,37 +71,37 @@ export default function Venue() {
                           <div className="h-6 w-6 rounded-full bg-gradient-to-r from-cyan-400 to-blue-400 flex items-center justify-center shrink-0 mt-0.5">
                             <span className="text-xs font-bold text-white">✓</span>
                           </div>
-                          <span>30,000 sq ft of flexible event space</span>
+                          <span>25,000 sq ft of sophisticated event space</span>
                         </li>
                         <li className="flex items-start gap-3">
                           <div className="h-6 w-6 rounded-full bg-gradient-to-r from-cyan-400 to-blue-400 flex items-center justify-center shrink-0 mt-0.5">
                             <span className="text-xs font-bold text-white">✓</span>
                           </div>
-                          <span>Main auditorium with seating for 500 attendees</span>
+                          <span>Grand Ballroom with seating for 400 attendees</span>
                         </li>
                         <li className="flex items-start gap-3">
                           <div className="h-6 w-6 rounded-full bg-gradient-to-r from-cyan-400 to-blue-400 flex items-center justify-center shrink-0 mt-0.5">
                             <span className="text-xs font-bold text-white">✓</span>
                           </div>
-                          <span>12 breakout rooms for parallel sessions</span>
+                          <span>8 breakout rooms for parallel sessions</span>
                         </li>
                         <li className="flex items-start gap-3">
                           <div className="h-6 w-6 rounded-full bg-gradient-to-r from-cyan-400 to-blue-400 flex items-center justify-center shrink-0 mt-0.5">
                             <span className="text-xs font-bold text-white">✓</span>
                           </div>
-                          <span>Dedicated networking spaces and exhibition areas</span>
+                          <span>Luxury networking lounges and exhibition areas</span>
                         </li>
                         <li className="flex items-start gap-3">
                           <div className="h-6 w-6 rounded-full bg-gradient-to-r from-cyan-400 to-blue-400 flex items-center justify-center shrink-0 mt-0.5">
                             <span className="text-xs font-bold text-white">✓</span>
                           </div>
-                          <span>High-speed WiFi and advanced AV capabilities</span>
+                          <span>High-speed WiFi and cutting-edge AV technology</span>
                         </li>
                         <li className="flex items-start gap-3">
                           <div className="h-6 w-6 rounded-full bg-gradient-to-r from-cyan-400 to-blue-400 flex items-center justify-center shrink-0 mt-0.5">
                             <span className="text-xs font-bold text-white">✓</span>
                           </div>
-                          <span>On-site catering and refreshment services</span>
+                          <span>Premium catering with international cuisine options</span>
                         </li>
                       </ul>
                     </div>
@@ -101,11 +112,7 @@ export default function Venue() {
                         <h3 className="text-lg font-medium text-white">Address</h3>
                       </div>
                       <p className="text-purple-100/90">
-                        123 Innovation Boulevard
-                        <br />
-                        San Francisco, CA 94107
-                        <br />
-                        United States
+                        declare soon
                       </p>
                     </div>
                   </div>
@@ -121,8 +128,8 @@ export default function Venue() {
                 <div>
                   <div className="relative h-[400px] w-full rounded-2xl overflow-hidden border border-purple-400/20">
                     <Image
-                      src="/placeholder.svg?height=400&width=600"
-                      alt="Tech Innovation Center"
+                      src="https://images.unsplash.com/photo-1587474260584-136574528ed5?q=80&w=2070&auto=format&fit=crop&ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D"
+                      alt="The Lalit New Delhi"
                       fill
                       className="object-cover"
                     />
@@ -137,8 +144,8 @@ export default function Venue() {
 
                     {/* Venue name overlay */}
                     <div className="absolute bottom-0 left-0 right-0 p-6">
-                      <h3 className="text-2xl font-bold text-white mb-1">Tech Innovation Center</h3>
-                      <p className="text-purple-100/90">San Francisco's premier event space</p>
+                      <h3 className="text-2xl font-bold text-white mb-1"> Delhi</h3>
+                      <p className="text-purple-100/90">Delhi's premier luxury hotel and conference venue</p>
                     </div>
                   </div>
                 </div>
@@ -164,7 +171,7 @@ export default function Venue() {
 
             <div className="relative rounded-2xl overflow-hidden h-[500px] w-full">
               <iframe
-                src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d50470.77791667087!2d-122.43129831322481!3d37.77492951404477!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x80858080b9b0a253%3A0x70b8c1b4e71be321!2sSan%20Francisco%2C%20CA%2094107!5e0!3m2!1sen!2sus!4v1649451018385!5m2!1sen!2sus"
+                src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3501.7976686379!2d77.22310491508555!3d28.632160982418996!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x390cfd37b741d057%3A0x38c0e61b5b99d185!2sThe%20LaLiT%20New%20Delhi!5e0!3m2!1sen!2sin!4v1650012345678!5m2!1sen!2sin"
                 width="100%"
                 height="100%"
                 style={{ border: 0 }}
@@ -184,18 +191,16 @@ export default function Venue() {
                   <h3 className="text-lg font-medium text-white">From Airport</h3>
                 </div>
                 <p className="text-purple-100/80">
-                  20 minutes from San Francisco International Airport (SFO) by taxi or rideshare
+                  30-45 minutes from Indira Gandhi International Airport (DEL) by taxi or Airport Express Metro
                 </p>
               </div>
 
               <div className="bg-purple-900/30 backdrop-blur-sm rounded-xl border border-purple-400/20 p-5">
                 <div className="flex items-center gap-2 mb-3">
                   <MapPin className="h-5 w-5 text-fuchsia-400" />
-                  <h3 className="text-lg font-medium text-white">Public Transit</h3>
+                  <h3 className="text-lg font-medium text-white">Metro Access</h3>
                 </div>
-                <p className="text-purple-100/80">
-                  5-minute walk from Powell Street BART station and multiple Muni bus lines
-                </p>
+                <p className="text-purple-100/80">5-minute walk from Barakhamba Road Metro Station (Blue Line)</p>
               </div>
 
               <div className="bg-purple-900/30 backdrop-blur-sm rounded-xl border border-purple-400/20 p-5">
@@ -203,9 +208,7 @@ export default function Venue() {
                   <MapPin className="h-5 w-5 text-purple-400" />
                   <h3 className="text-lg font-medium text-white">Parking</h3>
                 </div>
-                <p className="text-purple-100/80">
-                  On-site parking available for $25/day, with additional public parking nearby
-                </p>
+                <p className="text-purple-100/80">Valet parking available for hotel guests and conference attendees</p>
               </div>
             </div>
           </div>
@@ -223,76 +226,100 @@ export default function Venue() {
             <div className="h-1 w-20 bg-gradient-to-r from-cyan-400 to-fuchsia-400 mx-auto mb-8 rounded-full"></div>
 
             <p className="text-lg text-purple-100/90 max-w-2xl mx-auto">
-              Explore San Francisco during your visit to MetaConnect 2025
+              Explore Delhi during your visit to NextGenSynergy 2025
             </p>
           </div>
 
           <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-6">
             {[
               {
-                title: "Golden Gate Park",
-                description: "Expansive urban park with gardens, museums, and recreational areas",
-                distance: "3.5 miles",
-                icon: <Trees className="h-8 w-8 text-green-400" />,
-                gradient: "from-green-500 to-teal-600",
-              },
-              {
-                title: "Fisherman's Wharf",
-                description: "Popular waterfront area with seafood restaurants and sea lion viewing",
-                distance: "2.1 miles",
-                icon: <Landmark className="h-8 w-8 text-blue-400" />,
-                gradient: "from-blue-500 to-indigo-600",
-              },
-              {
-                title: "Museum of Modern Art",
-                description: "World-class collection of modern and contemporary artwork",
-                distance: "0.8 miles",
-                icon: <Landmark className="h-8 w-8 text-purple-400" />,
-                gradient: "from-purple-500 to-indigo-600",
-              },
-              {
-                title: "Ferry Building Marketplace",
-                description: "Historic ferry terminal with gourmet food vendors and farmers market",
-                distance: "1.2 miles",
-                icon: <Building className="h-8 w-8 text-amber-400" />,
+                title: "India Gate",
+                description: "Iconic war memorial with beautiful gardens and boating facilities",
+                distance: "3.5 km",
+                icon: <Landmark className="h-8 w-8 text-amber-400" />,
                 gradient: "from-amber-500 to-orange-600",
+                image:
+                  "https://images.unsplash.com/photo-1587474260584-136574528ed5?q=80&w=2070&auto=format&fit=crop&ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D",
               },
               {
-                title: "Chinatown",
-                description: "Vibrant neighborhood with authentic cuisine and cultural experiences",
-                distance: "1.5 miles",
+                title: "Red Fort",
+                description: "UNESCO World Heritage site and historic Mughal-era fortress",
+                distance: "5.2 km",
                 icon: <Landmark className="h-8 w-8 text-red-400" />,
                 gradient: "from-red-500 to-rose-600",
+                image:
+                  "https://images.unsplash.com/photo-1689113690757-0205a843a14e?q=80&w=1974&auto=format&fit=crop&ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D",
               },
               {
-                title: "Union Square",
-                description: "Premier shopping district with luxury retailers and boutiques",
-                distance: "0.6 miles",
-                icon: <Coffee className="h-8 w-8 text-fuchsia-400" />,
-                gradient: "from-fuchsia-500 to-pink-600",
+                title: "Humayun's Tomb",
+                description: "Magnificent garden tomb that inspired the Taj Mahal",
+                distance: "7.8 km",
+                icon: <Landmark className="h-8 w-8 text-purple-400" />,
+                gradient: "from-purple-500 to-indigo-600",
+                image:
+                  "https://images.unsplash.com/photo-1548013146-72479768bada?q=80&w=2076&auto=format&fit=crop&ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D",
+              },
+              {
+                title: "Connaught Place",
+                description: "Colonial-era shopping district with global brands and local markets",
+                distance: "0.5 km",
+                icon: <ShoppingBag className="h-8 w-8 text-cyan-400" />,
+                gradient: "from-cyan-500 to-blue-600",
+                image:
+                  "https://images.unsplash.com/photo-1592639296346-560c37a0f711?q=80&w=2070&auto=format&fit=crop&ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D",
+              },
+              {
+                title: "National Museum",
+                description: "Extensive collection of artifacts spanning 5,000 years of Indian history",
+                distance: "4.2 km",
+                icon: <Palette className="h-8 w-8 text-green-400" />,
+                gradient: "from-green-500 to-teal-600",
+                image:
+                  "https://images.unsplash.com/photo-1688406265997-77897c1a31d1?q=80&w=1973&auto=format&fit=crop&ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D",
+              },
+              {
+                title: "Lodhi Gardens",
+                description: "Historic park with tombs, gardens and jogging paths",
+                distance: "6.1 km",
+                icon: <Trees className="h-8 w-8 text-green-400" />,
+                gradient: "from-green-500 to-emerald-600",
+                image:
+                  "https://images.unsplash.com/photo-1603262110263-fb0112e7cc33?q=80&w=2071&auto=format&fit=crop&ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D",
               },
             ].map((attraction, index) => (
               <div
                 key={index}
-                className="relative backdrop-blur-sm bg-purple-900/20 rounded-2xl border border-purple-400/20 overflow-hidden p-6 group hover:bg-purple-900/30 transition-all"
+                className="relative backdrop-blur-sm bg-purple-900/20 rounded-2xl border border-purple-400/20 overflow-hidden group hover:bg-purple-900/30 transition-all"
               >
                 <div className="absolute -inset-px rounded-2xl bg-gradient-to-r from-purple-500/20 via-transparent to-cyan-500/20 opacity-0 transition-opacity group-hover:opacity-100"></div>
 
                 <div className="relative">
-                  <div
-                    className={`inline-flex h-16 w-16 items-center justify-center rounded-xl bg-gradient-to-br ${attraction.gradient} p-0.5 mb-4`}
-                  >
-                    <div className="flex h-full w-full items-center justify-center rounded-lg bg-purple-900/70">
-                      {attraction.icon}
-                    </div>
+                  <div className="h-48 w-full overflow-hidden">
+                    <Image
+                      src={attraction.image || "/placeholder.svg"}
+                      alt={attraction.title}
+                      width={400}
+                      height={200}
+                      className="w-full h-full object-cover transition-transform duration-500 group-hover:scale-110"
+                    />
                   </div>
 
-                  <h3 className="text-xl font-semibold text-white mb-2">{attraction.title}</h3>
-                  <p className="text-purple-100/70 mb-3">{attraction.description}</p>
+                  <div className="p-6">
+                    <div
+                      className={`inline-flex h-16 w-16 items-center justify-center rounded-xl bg-gradient-to-br ${attraction.gradient} p-0.5 mb-4 -mt-12 relative z-10`}
+                    >
+                      <div className="flex h-full w-full items-center justify-center rounded-lg bg-purple-900/70">
+                        {attraction.icon}
+                      </div>
+                    </div>
 
-                  <div className="flex items-center gap-2 text-purple-100/60">
-                    <MapPin className="h-4 w-4" />
-                    <span>{attraction.distance} from venue</span>
+                    <h3 className="text-xl font-semibold text-white mb-2">{attraction.title}</h3>
+                    <p className="text-purple-100/70 mb-3">{attraction.description}</p>
+
+                    <div className="flex items-center gap-2 text-purple-100/60">
+                      <MapPin className="h-4 w-4" />
+                      <span>{attraction.distance} from venue</span>
+                    </div>
                   </div>
                 </div>
               </div>
@@ -322,26 +349,26 @@ export default function Venue() {
 
                 <div className="space-y-6 text-purple-100/90">
                   <p>
-                    San Francisco is known for its diverse culinary scene. While the conference will provide catered
-                    lunches and refreshments, you may want to explore these nearby dining options for dinner or
-                    additional meals.
+                    Delhi is renowned for its diverse culinary scene, from street food to fine dining. While the
+                    conference will provide catered lunches and refreshments, you may want to explore these dining
+                    options for dinner or additional meals.
                   </p>
 
                   <div className="grid grid-cols-1 md:grid-cols-2 gap-6 mt-8">
                     <div className="bg-purple-900/30 backdrop-blur-sm rounded-xl border border-purple-400/20 p-5">
-                      <h3 className="text-lg font-medium text-white mb-3">On-Site Options</h3>
+                      <h3 className="text-lg font-medium text-white mb-3">Hotel Dining</h3>
                       <ul className="space-y-2">
                         <li className="flex items-start gap-2">
                           <div className="h-2 w-2 rounded-full bg-gradient-to-r from-amber-400 to-orange-400 mt-2"></div>
-                          <span>Innovation Café (ground floor) - breakfast and lunch</span>
+                          <span>24/7 Restaurant - international cuisine</span>
                         </li>
                         <li className="flex items-start gap-2">
                           <div className="h-2 w-2 rounded-full bg-gradient-to-r from-amber-400 to-orange-400 mt-2"></div>
-                          <span>Skyline Lounge (top floor) - light fare and beverages</span>
+                          <span>Baluchi - award-winning pan-Indian cuisine</span>
                         </li>
                         <li className="flex items-start gap-2">
                           <div className="h-2 w-2 rounded-full bg-gradient-to-r from-amber-400 to-orange-400 mt-2"></div>
-                          <span>Tech Bar - coffee, pastries, and snacks</span>
+                          <span>OKO - Asian cuisine and sushi</span>
                         </li>
                       </ul>
                     </div>
@@ -351,15 +378,15 @@ export default function Venue() {
                       <ul className="space-y-2">
                         <li className="flex items-start gap-2">
                           <div className="h-2 w-2 rounded-full bg-gradient-to-r from-amber-400 to-orange-400 mt-2"></div>
-                          <span>Pixel Bistro (2-min walk) - modern American</span>
+                          <span>Indian Accent (5-min drive) - modern Indian</span>
                         </li>
                         <li className="flex items-start gap-2">
                           <div className="h-2 w-2 rounded-full bg-gradient-to-r from-amber-400 to-orange-400 mt-2"></div>
-                          <span>Byte & Brew (5-min walk) - craft coffee and sandwiches</span>
+                          <span>Saravana Bhavan (10-min walk) - South Indian</span>
                         </li>
                         <li className="flex items-start gap-2">
                           <div className="h-2 w-2 rounded-full bg-gradient-to-r from-amber-400 to-orange-400 mt-2"></div>
-                          <span>Code Kitchen (7-min walk) - international fusion</span>
+                          <span>Bukhara (15-min drive) - North Indian tandoor</span>
                         </li>
                       </ul>
                     </div>
@@ -381,16 +408,20 @@ export default function Venue() {
               <div className="relative">
                 <h3 className="text-xl font-semibold text-white mb-3">Ready to Join Us?</h3>
                 <p className="text-purple-100/80 mb-6">
-                  Register for MetaConnect 2025 today and experience our state-of-the-art venue in San Francisco.
+                  Register for NextGenSynergy 2025 today and experience our luxury venue in the heart of New Delhi.
                 </p>
 
                 <div className="flex flex-col sm:flex-row gap-4 justify-center">
+                  <Link href="/registration">
                   <Button className="bg-gradient-to-r from-cyan-600 to-blue-600 hover:from-cyan-500 hover:to-blue-500 text-white border-0 rounded-lg">
                     Register Now
                   </Button>
+                  </Link>
+                  <Link href="/contact">
                   <Button className="bg-gradient-to-r from-fuchsia-600 to-purple-600 hover:from-fuchsia-500 hover:to-purple-500 text-white border-0 rounded-lg">
-                    Book Accommodation
+                  Contsct us
                   </Button>
+                  </Link>
                 </div>
               </div>
             </div>

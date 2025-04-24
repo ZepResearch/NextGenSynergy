@@ -66,6 +66,10 @@ const navLinks = [
     href: "/journals",
   },
   {
+    title: "VENUE",
+    href: "/venue",
+  },
+  {
     title: "AWARDS",
     href: "/awards",
   },

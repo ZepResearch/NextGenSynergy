@@ -30,8 +30,8 @@ export function VenueDetailCard() {
                 {/* Left side - Venue image */}
                 <div className="relative h-[300px] md:h-[400px] rounded-2xl overflow-hidden border border-purple-400/20">
                   <Image 
-                    src="/placeholder.svg?height=400&width=600" 
-                    alt="Conference venue" 
+                    src="https://images.unsplash.com/photo-1587474260584-136574528ed5?q=80&w=2070&auto=format&fit=crop&ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D" 
+                    alt="Conference venue - The Lalit New Delhi" 
                     fill
                     className="object-cover"
                   />
@@ -43,8 +43,8 @@ export function VenueDetailCard() {
                   
                   {/* Venue name overlay */}
                   <div className="absolute bottom-0 left-0 right-0 p-6">
-                    <h3 className="text-2xl font-bold text-white mb-1">Tech Innovation Center</h3>
-                    <p className="text-purple-100/90">San Francisco, CA</p>
+                    {/* <h3 className="text-2xl font-bold text-white mb-1">The Lalit New Delhi</h3>
+                    <p className="text-purple-100/90">Connaught Place, New Delhi</p> */}
                   </div>
                 </div>
                 
@@ -57,8 +57,8 @@ export function VenueDetailCard() {
                       </div>
                       <div>
                         <p className="text-sm text-purple-100/70">Date</p>
-                        <p className="text-white font-medium">June 15-17, 2025</p>
-                        <p className="text-sm text-purple-100/70">3 Days of Innovation</p>
+                        <p className="text-white font-medium">August 21-22, 2025</p>
+                        <p className="text-sm text-purple-100/70">2 Days of Innovation</p>
                       </div>
                     </div>
                     
@@ -79,8 +79,9 @@ export function VenueDetailCard() {
                       </div>
                       <div>
                         <p className="text-sm text-purple-100/70">Address</p>
-                        <p className="text-white font-medium">123 Innovation Boulevard</p>
-                        <p className="text-white">San Francisco, CA 94107</p>
+                        {/* <p className="text-white font-medium">Barakhamba Avenue</p>
+                        <p className="text-white">Connaught Place, New Delhi 110001</p> */}
+                   <p className="text-white">Declare soon  </p>   
                       </div>
                     </div>
                   </div>
@@ -96,27 +97,31 @@ export function VenueDetailCard() {
                       </div>
                       <div className="flex items-center gap-2 text-purple-100/80">
                         <Building size={16} className="text-fuchsia-400" />
-                        <span>Modern Facilities</span>
+                        <span>Luxury Facilities</span>
                       </div>
                       <div className="flex items-center gap-2 text-purple-100/80">
                         <Coffee size={16} className="text-purple-400" />
-                        <span>Catering Services</span>
+                        <span>Premium Catering</span>
                       </div>
                       <div className="flex items-center gap-2 text-purple-100/80">
                         <Users size={16} className="text-cyan-400" />
-                        <span>Networking Areas</span>
+                        <span>Networking Lounges</span>
                       </div>
                     </div>
                   </div>
                   
                   <div className="flex flex-col sm:flex-row gap-4 pt-4">
+                    <Link href="https://maps.app.goo.gl/mfuiMQLEPBc9gdpA7">
                     <Button className="bg-gradient-to-r from-cyan-600 to-fuchsia-600 hover:from-cyan-500 hover:to-fuchsia-500 text-white border-0 rounded-lg px-6 py-5">
                       <Navigation className="mr-2 h-5 w-5" />
                       Get Directions
                     </Button>
+                    </Link> 
+                    <Link href="/venue">
                     <Button variant="outline" className="border-purple-400/30 bg-purple-500/10 text-purple-100 hover:bg-purple-500/20 rounded-lg px-6 py-5 backdrop-blur-md">
-                      View Floor Plan
+                      View Detail page
                     </Button>
+                    </Link>
                   </div>
                 </div>
               </div>
@@ -127,11 +132,11 @@ export function VenueDetailCard() {
                 <div className="grid grid-cols-1 md:grid-cols-2 gap-6">
                   <div>
                     <p className="text-sm font-medium text-cyan-300 mb-2">From Airport</p>
-                    <p className="text-purple-100/80">San Francisco International Airport (SFO) is 14 miles from the venue. Taxi services and ride-sharing options are available, with an average travel time of 25 minutes.</p>
+                    <p className="text-purple-100/80">Indira Gandhi International Airport (DEL) is 16 km from the venue. Taxi services, airport express metro, and ride-sharing options are available, with an average travel time of 30-45 minutes.</p>
                   </div>
                   <div>
                     <p className="text-sm font-medium text-fuchsia-300 mb-2">Public Transportation</p>
-                    <p className="text-purple-100/80">The venue is accessible via BART and Muni lines. The Powell Street station is a 10-minute walk from the venue.</p>
+                    <p className="text-purple-100/80">The venue is easily accessible via Delhi Metro. Barakhamba Road Metro Station (Blue Line) is just a 5-minute walk from the venue.</p>
                   </div>
                 </div>
               </div>

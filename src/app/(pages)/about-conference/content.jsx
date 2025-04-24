@@ -1,6 +1,6 @@
 import Link from "next/link"
 import { Button } from "@/components/ui/button"
-import { Calendar, Globe, Users, Lightbulb, Target, Zap, ChevronRight } from "lucide-react"
+import { Calendar, Globe, Users, Lightbulb, Target, Zap, ChevronRight, MapPin } from "lucide-react"
 
 export default function AboutConference() {
   return (
@@ -329,19 +329,19 @@ export default function AboutConference() {
                   </div>
                   <div>
                     <p className="text-sm text-purple-100/70">Date</p>
-                    <p className="text-white font-medium">July 17th - 18th, 2025</p>
+                    <p className="text-white font-medium">August 21<sup>st</sup> - 22<sup>nd</sup>, 2025</p>
                   </div>
                 </div>
 
                 <div className="flex items-center gap-4">
                   <div className="flex h-12 w-12 shrink-0 items-center justify-center rounded-xl bg-gradient-to-br from-fuchsia-500 to-purple-600 p-0.5">
                     <div className="flex h-full w-full items-center justify-center rounded-lg bg-purple-900/70">
-                      <Globe className="h-6 w-6 text-fuchsia-400" />
+                      <MapPin className="h-6 w-6 text-fuchsia-400" />
                     </div>
                   </div>
                   <div>
-                    <p className="text-sm text-purple-100/70">Format</p>
-                    <p className="text-white font-medium">Fully Virtual - Accessible Worldwide</p>
+                    <p className="text-sm text-purple-100/70">Hybrid - Accessible Worldwide</p>
+                    <p className="text-white font-medium"> Delhi</p>
                   </div>
                 </div>
 

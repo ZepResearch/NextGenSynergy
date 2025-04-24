@@ -3,6 +3,7 @@ import { GeometricShapes } from "@/components/ui/geometric-shapes"
 import { FeatureCard } from "@/components/ui/feature-card"
 import { Button } from "@/components/ui/button"
 import { ChevronRight, Braces, Network, Microscope } from "lucide-react"
+import Link from "next/link"
 
 export default function Hero() {
   return (
@@ -57,15 +58,20 @@ export default function Hero() {
               />
             </div>
               <div className="flex flex-wrap gap-4">
+                <Link
+                  href="/registration">
                 <Button className="bg-gradient-to-r from-fuchsia-600 to-purple-600 hover:from-fuchsia-500 hover:to-purple-500 text-white border-0 rounded-lg px-8 py-6 text-lg">
                   Register Now
                 </Button>
+                </Link>
+                <Link href="/about-conference">
                 <Button
                   variant="outline"
                   className="border-purple-400/30 bg-purple-500/10 text-purple-100 hover:bg-purple-500/20 rounded-lg px-6 py-6 text-lg backdrop-blur-md"
                 >
                   Learn More <ChevronRight className="ml-2 h-5 w-5" />
                 </Button>
+                </Link>
               </div>
             </div>
 

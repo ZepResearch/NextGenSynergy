@@ -5,11 +5,11 @@ import { Button } from "@/components/ui/button"
 import { ChevronRight, Calendar, Clock, ChevronDown, ChevronUp } from 'lucide-react'
 
 export default function Schedule() {
-  const [activeDate, setActiveDate] = useState("July - 17th | Registration")
+  const [activeDate, setActiveDate] = useState("August - 21st | Registration")
 
   const scheduleData = [
     {
-      date: "July - 17th | Registration",
+      date: "August - 21st | Registration",
       items: [
         { time: "8:00AM - 9:15AM", title: "Registration" },
         { time: "9:15AM - 9:30AM", title: "Inaugural Function" },
@@ -23,7 +23,7 @@ export default function Schedule() {
       ],
     },
     {
-      date: "July - 18th | Closing Day",
+      date: "August - 22nd | Closing Day",
       items: [
         { time: "9:00AM - 9:30AM", title: "Registration" },
         { time: "9:30AM - 10:00AM", title: "Closing Ceremony Opening Remarks" },
@@ -208,7 +208,7 @@ export default function Schedule() {
               .filter((day) => day.date === activeDate)
               .map((day, dayIndex) => (
                 <div key={dayIndex} className="relative">
-                  <div className="absolute left-8 top-0 bottom-0 w-0.5 bg-gradient-to-b from-cyan-500 via-fuchsia-500 to-purple-500"></div>
+                  <div className="absolute left-8 top-0 bottom-0 w-0.5 bg-gradient-to-b from-cyan-500 via-fuchsia-500 to-purple-500 mt-12"></div>
 
                   <h3 className="text-2xl font-bold text-white mb-8">{day.date}</h3>
 

@@ -1,6 +1,6 @@
 import Link from "next/link"
 import { Button } from "@/components/ui/button"
-import { ArrowRight, Users, Calendar, Video } from "lucide-react"
+import { ArrowRight, Users, Calendar, MapPinnedIcon,  } from "lucide-react"
 
 export function AboutSection() {
   return (
@@ -27,14 +27,14 @@ export function AboutSection() {
               <div className="grid grid-cols-1 md:grid-cols-3 gap-6 mb-10">
                 <div className="flex flex-col items-center p-4 rounded-xl bg-purple-500/10 backdrop-blur-sm border border-purple-400/20">
                   <Calendar className="h-8 w-8 text-cyan-400 mb-3" />
-                  <h3 className="text-white font-medium">July 17th-18th, 2025</h3>
+                  <h3 className="text-white font-medium">August 21st-22nd, 2025</h3>
                   <p className="text-purple-200/70 text-sm">2 Days of Innovation</p>
                 </div>
 
                 <div className="flex flex-col items-center p-4 rounded-xl bg-purple-500/10 backdrop-blur-sm border border-purple-400/20">
-                  <Video className="h-8 w-8 text-fuchsia-400 mb-3" />
-                  <h3 className="text-white font-medium">Virtual Conference</h3>
-                  <p className="text-purple-200/70 text-sm">Global Accessibility</p>
+                  <MapPinnedIcon className="h-8 w-8 text-fuchsia-400 mb-3" />
+                  <h3 className="text-white font-medium"> Delhi</h3>
+                  <p className="text-purple-50 text-sm">Hybrid Conference</p>
                 </div>
 
                 <div className="flex flex-col items-center p-4 rounded-xl bg-purple-500/10 backdrop-blur-sm border border-purple-400/20">

@@ -1,5 +1,5 @@
 import Link from "next/link"
-import { Award, MapPin, Handshake, Users, Calendar } from "lucide-react"
+import { Award, MapPin, Handshake, Users, Calendar, BookA, Book } from "lucide-react"
 
 export function CtaSection() {
   const ctaCards = [
@@ -37,6 +37,13 @@ export function CtaSection() {
       icon: <Calendar className="w-10 h-10 text-cyan-400" />,
       link: "/schedule",
       gradient: "from-cyan-500 to-teal-600",
+    },
+    {
+      title: "Journal",
+      description: "Explore our collection of academic journals and research publications",
+      icon: <Book className="w-10 h-10 text-lime-400" />,
+      link: "/journals",
+      gradient: "from-lime-500 to-teal-600",
     },
   ]
 

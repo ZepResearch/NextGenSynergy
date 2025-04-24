@@ -13,9 +13,7 @@ import {
   Youtube,
   ArrowRight,
   Globe,
-  Quote,
   ExternalLink,
-  Star,
 } from "lucide-react"
 
 const FooterLink = ({ href, children }) => (
@@ -85,7 +83,9 @@ export default function Footer() {
           {/* Column 1 - About */}
           <div>
             <div className="flex items-center mb-4">
-              <Image src={'/Logox.svg'} className="drop-shadow-2xl  " alt="logo" height={200} width={300}/>
+              <span className="text-2xl font-bold tracking-wider text-transparent bg-clip-text bg-gradient-to-r from-purple-400 to-cyan-300">
+                NextGenSynergy
+              </span>
             </div>
             <p className="text-purple-200/80 mb-6">
               The Virtual Interdisciplinary Forum bringing together researchers, technologists, and visionaries to
@@ -122,14 +122,17 @@ export default function Footer() {
               <li>
                 <FooterLink href="/submission">Submission</FooterLink>
               </li>
-              {/* <li>
+              <li>
                 <FooterLink href="/venue">Venue</FooterLink>
-              </li> */}
+              </li>
               <li>
                 <FooterLink href="/awards">Awards</FooterLink>
               </li>
               <li>
                 <FooterLink href="/contact">Contact</FooterLink>
+              </li>
+              <li>
+                <FooterLink href="/journals">Journals</FooterLink>
               </li>
             </ul>
           </div>
@@ -160,61 +163,125 @@ export default function Footer() {
               <li className="flex items-center">
                 <Globe className="h-5 w-5 mr-3 text-cyan-400 shrink-0" />
                 <Link
-                  href="https://www.zepresearch.com/"
+                  href="https://thenextgensynergy.com"
                   className="text-purple-200/80 hover:text-cyan-300 transition-colors flex items-center"
                 >
-                www.zepresearch.com
+                  thenextgensynergy.com
                   <ExternalLink className="h-3 w-3 ml-1 text-cyan-400" />
                 </Link>
               </li>
             </ul>
           </div>
 
-          {/* Column 4 - CEO Note (replacing Newsletter) */}
+          {/* Column 4 - Our Other Conferences */}
           <div>
             <h3 className="text-xl font-bold mb-6 text-transparent bg-clip-text bg-gradient-to-r from-purple-400 to-cyan-300">
-              From Our CEO
+              Our Other Conferences
             </h3>
-            <div className="relative backdrop-blur-sm bg-purple-900/20 rounded-2xl border border-purple-400/20 overflow-hidden p-5">
-              <div className="absolute -inset-px rounded-2xl bg-gradient-to-r from-purple-500/20 via-transparent to-cyan-500/20 opacity-30"></div>
-
-              <div className="relative flex flex-col items-center">
-                <div className="relative h-20 w-20 rounded-full p-1 bg-gradient-to-r from-cyan-500 to-fuchsia-500 mb-4">
-                  <div className="absolute inset-0 rounded-full bg-gradient-to-r from-cyan-500 to-fuchsia-500 blur-md opacity-50"></div>
-                  <div className="relative h-full w-full rounded-full overflow-hidden border-2 border-purple-900/50">
-                    <Image
-                      src="/anikit.jpeg?height=80&width=80"
-                      alt="CEO"
-                      width={80}
-                      height={80}
-                      className="object-cover"
-                    />
+            <div className="space-y-4">
+              {/* Conference Card 1 */}
+              <Link href="https://icsthm.com" target="_blank" rel="noopener noreferrer">
+                <motion.div
+                  whileHover={{ scale: 1.03 }}
+                  className="relative backdrop-blur-sm bg-purple-900/20 rounded-lg border border-purple-400/20 overflow-hidden group"
+                >
+                  <div className="absolute -inset-px rounded-lg bg-gradient-to-r from-purple-500/20 via-transparent to-cyan-500/20 opacity-30 group-hover:opacity-60 transition-opacity duration-300"></div>
+                  <div className="flex p-3">
+                    <div className="relative h-16 w-16 rounded-md overflow-hidden mr-3 border border-cyan-500/30">
+                      <div className="absolute inset-0 bg-gradient-to-br from-cyan-500/20 to-purple-500/20 group-hover:opacity-70 transition-opacity"></div>
+                      <Image
+                        src="/conf/ictmh.svg?height=64&width=64"
+                        alt="ICSTHM Conference"
+                        width={64}
+                        height={64}
+                        className="object-cover"
+                      />
+                    </div>
+                    <div className="flex flex-col justify-center">
+                      <h4 className="text-sm font-medium text-cyan-300 group-hover:text-cyan-200 transition-colors">ICSTHM 2025</h4>
+                      <div className="flex items-center text-xs text-purple-200/70">
+                        <MapPin className="h-3 w-3 mr-1 text-purple-400" />
+                        <span>Bangkok, Thailand</span>
+                      </div>
+                      <div className="flex items-center mt-1 text-xs text-purple-200/70 group-hover:text-cyan-300 transition-colors">
+                        <ExternalLink className="h-3 w-3 mr-1" />
+                        <span>Visit Website</span>
+                      </div>
+                    </div>
                   </div>
-                </div>
+                </motion.div>
+              </Link>
 
-                <Quote className="h-6 w-6 text-cyan-400 mb-2" />
+              {/* Conference Card 2 */}
+              <Link href="https://www.wfcces.com/" target="_blank" rel="noopener noreferrer">
+                <motion.div
+                  whileHover={{ scale: 1.03 }}
+                  className="relative backdrop-blur-sm bg-purple-900/20 rounded-lg border border-purple-400/20 overflow-hidden group"
+                >
+                  <div className="absolute -inset-px rounded-lg bg-gradient-to-r from-purple-500/20 via-transparent to-cyan-500/20 opacity-30 group-hover:opacity-60 transition-opacity duration-300"></div>
+                  <div className="flex p-3">
+                    <div className="relative h-16 w-16 rounded-md overflow-hidden mr-3 border border-cyan-500/30">
+                      <div className="absolute inset-0 bg-gradient-to-br from-cyan-500/20 to-purple-500/20 group-hover:opacity-70 transition-opacity"></div>
+                      <Image
+                        src="/conf/wfcces.png?height=64&width=64"
+                        alt="ICAIM Conference"
+                        width={64}
+                        height={64}
+                        className="object-cover"
+                      />
+                    </div>
+                    <div className="flex flex-col justify-center">
+                      <h4 className="text-sm font-medium text-cyan-300 group-hover:text-cyan-200 transition-colors">WFCCES 2025</h4>
+                      <div className="flex items-center text-xs text-purple-200/70">
+                        <MapPin className="h-3 w-3 mr-1 text-purple-400" />
+                        <span>Kuala Lumpur, Malaysia</span>
+                      </div>
+                      <div className="flex items-center mt-1 text-xs text-purple-200/70 group-hover:text-cyan-300 transition-colors">
+                        <ExternalLink className="h-3 w-3 mr-1" />
+                        <span>Visit Website</span>
+                      </div>
+                    </div>
+                  </div>
+                </motion.div>
+              </Link>
 
-                <p className="text-purple-200/90 text-center italic mb-3">
-                  "At NextGenSynergy, we're bridging disciplines to create a future where virtual collaboration
-                  accelerates scientific discovery and innovation."
-                </p>
-
-                <p className="text-cyan-300 font-medium">Ankit Rath</p>
-                <p className="text-purple-300/70 text-sm">Founder & CEO</p>
-              </div>
+              {/* Conference Card 3 */}
+              <Link href="https://www.icemss.in/" target="_blank" rel="noopener noreferrer">
+                <motion.div
+                  whileHover={{ scale: 1.03 }}
+                  className="relative backdrop-blur-sm bg-purple-900/20 rounded-lg border border-purple-400/20 overflow-hidden group"
+                >
+                  <div className="absolute -inset-px rounded-lg bg-gradient-to-r from-purple-500/20 via-transparent to-cyan-500/20 opacity-30 group-hover:opacity-60 transition-opacity duration-300"></div>
+                  <div className="flex p-3">
+                    <div className="relative h-16 w-16 rounded-md overflow-hidden mr-3 border border-cyan-500/30">
+                      <div className="absolute inset-0 bg-gradient-to-br from-cyan-500/20 to-purple-500/20 group-hover:opacity-70 transition-opacity"></div>
+                      <Image
+                        src="/conf/icemss.ico?height=64&width=64"
+                        alt="ICBDM Conference"
+                        width={64}
+                        height={64}
+                        className="object-cover p-1"
+                      />
+                    </div>
+                    <div className="flex flex-col justify-center">
+                      <h4 className="text-sm font-medium text-cyan-300 group-hover:text-cyan-200 transition-colors">ICEMSS 2025</h4>
+                      <div className="flex items-center text-xs text-purple-200/70">
+                        <MapPin className="h-3 w-3 mr-1 text-purple-400" />
+                        <span>GOA</span>
+                      </div>
+                      <div className="flex items-center mt-1 text-xs text-purple-200/70 group-hover:text-cyan-300 transition-colors">
+                        <ExternalLink className="h-3 w-3 mr-1" />
+                        <span>Visit Website</span>
+                      </div>
+                    </div>
+                  </div>
+                </motion.div>
+              </Link>
             </div>
           </div>
-        </div>
-          <div className="mt-10 text-center md:flex-row flex flex-col items-center justify-center gap-4 text-xs">
-        
-            <Link href="/privacy-policy" className="text-pink-500 drop-shadow-2xl">Privacy Policy</Link>
-            <span className="text-purple-200/60">|</span>
-            <Link href="/terms-and-conditions" className="text-pink-500 drop-shadow-2xl">Terms & Condition</Link>    
-            <span className="text-purple-200/60">|</span>     
-            <Link href="/cancellation-policy" className="text-pink-500 drop-shadow-2xl">Cancellation Policy</Link>  
 
-          </div>      
-        <div className="mt-2 pt-8 border-t border-purple-500/30 text-center">
+      </div>
+        <div className="mt-12 pt-8 border-t border-purple-500/30 text-center">
           <p className="text-purple-200/60">
             © {new Date().getFullYear()} NextGenSynergy: The Virtual Interdisciplinary Forum. All rights reserved.
           </p>

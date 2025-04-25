@@ -5,42 +5,42 @@ export function CtaSection() {
   const ctaCards = [
     {
       title: "Awards",
-      description: "Recognizing excellence in climate change and sustainability efforts",
+      description: "Recognizing groundbreaking contributions across disciplines — from AI and sustainability to education, health, and technology.",
       icon: <Award className="w-10 h-10 text-cyan-400" />,
       link: "/awards",
       gradient: "from-cyan-500 to-blue-600",
     },
     {
       title: "Venue",
-      description: "Join us at the Holiday Inn Express Kuala Lumpur City Centre",
+      description: "Attend in person at Delhi or join our vibrant virtual platform — wherever you are in the world.",
       icon: <MapPin className="w-10 h-10 text-fuchsia-400" />,
       link: "/venue",
       gradient: "from-fuchsia-500 to-purple-600",
     },
     {
       title: "Sponsorship",
-      description: "Partner with us to showcase your commitment to climate action",
+      description: "Showcase your organization’s commitment to innovation and interdisciplinary advancement by partnering with NextGen Synergy.",
       icon: <Handshake className="w-10 h-10 text-purple-400" />,
       link: "/sponsorship",
       gradient: "from-purple-500 to-indigo-600",
     },
     {
       title: "Committee",
-      description: "Meet the experts shaping our climate change conference",
+      description: "Meet the diverse panel of experts, researchers, and thought leaders driving the vision and quality of this hybrid forum.",
       icon: <Users className="w-10 h-10 text-pink-400" />,
       link: "/committee",
       gradient: "from-pink-500 to-rose-600",
     },
     {
       title: "Schedule",
-      description: "View the full program of events and sessions.",
+      description: "Explore our dynamic 2-day agenda filled with live sessions, networking opportunities, virtual lounges, and interactive panels.",
       icon: <Calendar className="w-10 h-10 text-cyan-400" />,
       link: "/schedule",
       gradient: "from-cyan-500 to-teal-600",
     },
     {
       title: "Journal",
-      description: "Explore our collection of academic journals and research publications",
+      description: "Access a curated library of cross-disciplinary publications and research papers contributed by global participants.",
       icon: <Book className="w-10 h-10 text-lime-400" />,
       link: "/journals",
       gradient: "from-lime-500 to-teal-600",
@@ -52,7 +52,7 @@ export function CtaSection() {
       <div className="container mx-auto px-4">
         <div className="text-center mb-16">
           <h2 className="text-3xl md:text-4xl font-bold mb-6 text-transparent bg-clip-text bg-gradient-to-r from-cyan-300 to-fuchsia-300">
-            Explore MetaConnect
+            Explore NextGenSynergy
           </h2>
 
           <div className="h-1 w-20 bg-gradient-to-r from-cyan-400 to-fuchsia-400 mx-auto mb-8 rounded-full"></div>

@@ -9,30 +9,31 @@ export function FaqSection() {
   
   const faqItems = [
     {
-      question: "What is NextGenSynergy?",
-      answer: "NextGenSynergy is a cutting-edge virtual interdisciplinary forum focused on bridging diverse academic disciplines. It brings together researchers, educators, and practitioners to explore innovative approaches to complex problems through collaborative dialogue and knowledge exchange."
+      question: "What is NextGen Synergy?",
+      answer: "NextGen Synergy is a groundbreaking hybrid interdisciplinary forum that brings together visionaries from research, industry, education, and policy to explore bold, collaborative solutions to todays most complex challenges. Whether in-person or online, its a space where ideas from diverse disciplines converge to spark innovation."
     },
     {
-      question: "Who should attend NextGenSynergy?",
-      answer: "NextGenSynergy is ideal for researchers, academics, industry professionals, policy makers, and students interested in interdisciplinary approaches, cross-disciplinary methodologies, and collaborative solutions to complex global challenges. Anyone seeking to expand their perspectives beyond traditional disciplinary boundaries will benefit."
+      question: "Who should attend NextGen Synergy?",
+      answer: "This event is perfect for researchers, professionals, educators, policymakers, entrepreneurs, and students who are passionate about innovation, interdisciplinary collaboration, and pushing the boundaries of their fields. If you are curious, forward-thinking, and eager to connect with others who are reimagining the future — this is the place for you."
     },
     {
       question: "How do I access the virtual sessions?",
-      answer: "All registered participants will receive secure login credentials to our virtual conference platform one week before the event. The platform is accessible via web browser on any device with internet connectivity. Technical support will be available throughout the conference."
+      answer: "Virtual attendees will receive personalized access links via email about a week before the conference. Our online platform is browser-based, mobile-friendly, and requires no downloads. A dedicated support team will be available throughout to ensure a seamless experience."
     },
     {
-      question: "Are there opportunities for networking in a virtual format?",
-      answer: "Absolutely! NextGenSynergy features specialized virtual networking rooms, themed discussion lounges, and AI-powered matchmaking to connect attendees with shared interests. Our platform enables both scheduled and spontaneous meetings, as well as persistent chat functionality throughout the event."
+      question: "Are there networking opportunities for both virtual and in-person attendees?",
+      answer: "Yes! Whether you are attending on-site or online, you will have access to curated networking experiences — from AI-powered matchmaking and virtual lounges to in-person mixers and collaborative workshops. We have built the conference to ensure valuable connections happen across both formats."
     },
     {
-      question: "How can I present my research at NextGenSynergy?",
-      answer: "We welcome research presentations through our call for papers. Submissions are reviewed by our interdisciplinary committee, and accepted papers will be presented in virtual sessions with interactive Q&A components. Visit the 'Call for Papers' section on our website for submission guidelines and deadlines."
+      question: "How can I present my research at NextGen Synergy?",
+      answer: "We are actively accepting proposals through our Call for Papers. All submissions are peer-reviewed by our interdisciplinary committee — including experts like Dr. Ayesha Narang (AI & Society) and Prof. Michael Tanaka (Urban Systems). Selected speakers will present live during the event with opportunities for real-time engagement. Check our website for submission details and deadlines."
     },
     {
-      question: "Will sessions accommodate different time zones?",
-      answer: "Yes, the conference schedule is designed with global participation in mind. Key sessions will be offered at multiple times to accommodate different time zones, and all presentations will be recorded and available on-demand to registered participants for 30 days after the event."
+      question: "Will the sessions accommodate different time zones?",
+      answer: "Absolutely. Our schedule includes repeat sessions and live broadcasts in multiple time slots to support global participation. All sessions will also be recorded and available on-demand for 30 days after the event, so you can catch up anytime, anywhere."
     }
-  ]
+  ];
+  
   
   const toggleFaq = (index) => {
     setOpenIndex(openIndex === index ? null : index)

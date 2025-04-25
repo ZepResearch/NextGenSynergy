@@ -31,12 +31,11 @@ export default function Hero() {
               NextGen<span className="text-white">Synergy</span>
               </h1>
               <h2 className="text-2xl md:text-3xl font-light tracking-wide text-white">
-              The Virtual  <span className="text-fuchsia-400 font-medium">Interdisciplinary Forum </span>
+              The Hybrid  <span className="text-fuchsia-400 font-medium">Interdisciplinary Forum </span>
               </h2>
 
-              <p className="text-lg text-purple-100/80 max-w-md">
-              Welcome to the Nextgen Synergy Conference — where the brightest minds, boldest ideas, and breakthrough technologies converge.
-
+              <p className="text-lg text-purple-100/80 max-w-2xl">
+              Welcome to the Nextgen Synergy Conference — a groundbreaking hybrid experience where the brightest minds, boldest ideas, and breakthrough technologies converge, both in-person and online.
               </p>
 
               <div className="flex sm:flex-row flex-col-reverse  items-start sm:items-center justify-center gap-3 px-4 max-w-2xl  backdrop-blur-sm bg-gray-50/30 py-4 rounded-3xl">
@@ -105,13 +104,13 @@ export default function Hero() {
             />
             <FeatureCard
               icon={<Network className="h-8 w-8 text-fuchsia-400" />}
-              title="Virtual Research Environments"
-              description="Experience cutting-edge virtual spaces designed for collaborative scientific discovery."
+              title="Hybrid  Research Environments"
+              description="Experience cutting-edge spaces — both virtual and physical — designed to foster collaborative scientific discovery and engagement."
             />
             <FeatureCard
               icon={<Microscope className="h-8 w-8 text-purple-400" />}
               title="Future Research Paradigms"
-              description="Explore how metaverse technologies are transforming the landscape of scientific inquiry."
+              description="Explore how hybrid and metaverse technologies are transforming the landscape of scientific inquiry and collaboration."
             />
           </div>
         </div>

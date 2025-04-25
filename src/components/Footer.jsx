@@ -83,13 +83,18 @@ export default function Footer() {
           {/* Column 1 - About */}
           <div>
             <div className="flex items-center mb-4">
-              <span className="text-2xl font-bold tracking-wider text-transparent bg-clip-text bg-gradient-to-r from-purple-400 to-cyan-300">
-                NextGenSynergy
-              </span>
+             <Image
+                src="/logox.svg"
+                alt="NextGenSynergy Logo"
+                width={200}
+                height={200}
+                className=" rounded-full mr-3"
+              />
+              
             </div>
             <p className="text-purple-200/80 mb-6">
-              The Virtual Interdisciplinary Forum bringing together researchers, technologists, and visionaries to
-              explore the intersection of virtual worlds and scientific discovery.
+              The Hybrid Interdisciplinary Forum bringing together researchers, technologists, and visionaries to
+              explore the intersection of futuristic worlds and scientific discovery.
             </p>
             <div className="flex space-x-3">
               <SocialIcon
@@ -163,10 +168,10 @@ export default function Footer() {
               <li className="flex items-center">
                 <Globe className="h-5 w-5 mr-3 text-cyan-400 shrink-0" />
                 <Link
-                  href="https://thenextgensynergy.com"
+                  href="https://www.zepresearch.com/"
                   className="text-purple-200/80 hover:text-cyan-300 transition-colors flex items-center"
                 >
-                  thenextgensynergy.com
+                  zepresearch.com
                   <ExternalLink className="h-3 w-3 ml-1 text-cyan-400" />
                 </Link>
               </li>
@@ -283,7 +288,7 @@ export default function Footer() {
       </div>
         <div className="mt-12 pt-8 border-t border-purple-500/30 text-center">
           <p className="text-purple-200/60">
-            © {new Date().getFullYear()} NextGenSynergy: The Virtual Interdisciplinary Forum. All rights reserved.
+            © {new Date().getFullYear()} NextGenSynergy: The Hybrid Interdisciplinary Forum. All rights reserved.
           </p>
         </div>
       </div>

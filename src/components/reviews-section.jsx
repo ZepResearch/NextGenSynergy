@@ -9,55 +9,55 @@ export function ReviewsSection() {
   // Sample review data
   const reviews = [
     {
-      name: "Dr. Emily Chen",
+      name: "Dr. Ananya Mehta",
       location: "Stanford University",
       date: "March 15",
       rating: 5,
       comment:
-        "Brilliant organization of the virtual conference. The diversity of speakers and interdisciplinary topics covered was impressive. The networking platform worked seamlessly across time zones.",
+        "NextGen Synergy nailed the hybrid experience. The speaker lineup was top-notch, and the ability to interact with people both in-person and virtually made it feel truly global. Super impressed with the smooth organization!"
     },
     {
-      name: "Prof. Michael Rodriguez",
-      location: "MIT",
+      name: "Prof. Julian Morales",
+      location: "Massachusetts Institute of Technology (MIT)",
       date: "March 12",
       rating: 5,
       comment:
-        "Outstanding presentation on cross-disciplinary approaches to climate science. NextGenSynergy exceeded my expectations in terms of content quality and fostering meaningful connections.",
+        "The sessions on cross-disciplinary innovation in climate science were incredibly engaging. It’s rare to find a forum where content quality, networking, and accessibility align this well — NextGen Synergy delivered on all fronts."
     },
     {
-      name: "Dr. Sarah Johnson",
-      location: "Oxford University",
+      name: "Dr. Amina Hassan",
+      location: "University of Oxford",
       date: "March 14",
       rating: 4,
       comment:
-        "Informative sessions on bridging social sciences with data analytics. The case studies presented were relevant and actionable. Looking forward to next year's forum.",
+        "The conversations around blending social sciences with data were eye-opening. I appreciated being able to join virtually without missing out on Q&As or interactions. Looking forward to attending in person next year!"
     },
     {
-      name: "Alex Thompson",
-      location: "Google Research",
+      name: "Daniel Kim",
+      location: "Google DeepMind",
       date: "March 10",
       rating: 5,
       comment:
-        "The NextGenSynergy conference was a game-changer for our interdisciplinary research team. The virtual format allowed us to collaborate with colleagues we'd never have met otherwise.",
+        "This conference redefined how our team thinks about collaboration. The hybrid format helped us connect with experts in AI, ethics, and education that we wouldn't have otherwise crossed paths with."
     },
     {
-      name: "Dr. Hiroshi Tanaka",
+      name: "Dr. Keiko Sakamoto",
       location: "Tokyo Institute of Technology",
       date: "March 13",
       rating: 4,
       comment:
-        "Excellent organization and thought-provoking discussions across disciplines. The interactive virtual workshops facilitated genuine knowledge exchange despite physical distance.",
+        "Brilliant discussions across disciplines, especially during the workshops. The mix of live interaction and on-demand content made it easy to stay engaged, even across time zones."
     },
     {
-      name: "Lisa Wagner",
+      name: "Elena Fischer",
       location: "Berlin Institute for Advanced Study",
       date: "March 11",
       rating: 5,
       comment:
-        "The forum provided valuable insights into emerging interdisciplinary research paradigms. The ability to access sessions across multiple tracks virtually was particularly valuable.",
-    },
-  ]
-
+        "I loved the flexibility of attending virtually while still being part of breakout sessions and panels. It was well-curated, and the topics reflected real interdisciplinary trends happening now."
+    }
+  ];
+  
   // Ratings data
   const ratingsData = {
     overall: 4.8,

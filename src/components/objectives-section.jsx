@@ -19,8 +19,7 @@ export function ObjectivesSection() {
                 <div className="h-1 w-20 bg-gradient-to-r from-cyan-400 to-fuchsia-400 mx-auto mb-8 rounded-full"></div>
 
                 <p className="text-lg text-purple-100/90 max-w-2xl mx-auto">
-                  NextGenSynergy aims to revolutionize how researchers collaborate across disciplines through our virtual 
-                  platform, breaking traditional boundaries and fostering innovative approaches to complex problems.
+                NextGen Synergy aims to revolutionize how researchers collaborate across disciplines through a hybrid platform, breaking traditional boundaries and fostering innovative approaches to complex global challenges.
                 </p>
               </div>
 
@@ -28,28 +27,28 @@ export function ObjectivesSection() {
                 <ObjectiveCard
                   icon={<Target className="h-10 w-10" />}
                   title="Bridge Academic Disciplines"
-                  description="Create an inclusive virtual space where researchers, educators, and practitioners from diverse fields can engage in meaningful dialogue and collaborative problem-solving."
+                  description="Create an inclusive space — both in-person and virtual — where researchers, educators, and practitioners from diverse fields engage in meaningful dialogue and collaborative problem-solving."
                   gradient="from-cyan-400 to-blue-500"
                 />
 
                 <ObjectiveCard
                   icon={<Lightbulb className="h-10 w-10" />}
                   title="Catalyze Breakthrough Ideas"
-                  description="Provide a platform for sharing methodological innovations and cross-disciplinary approaches that can transform how we address complex research questions and societal challenges."
+                  description="Provide a dynamic platform for sharing methodological innovations and cross-disciplinary insights that can transform how we address complex research questions and societal challenges."
                   gradient="from-fuchsia-400 to-purple-500"
                 />
 
                 <ObjectiveCard
                   icon={<Handshake className="h-10 w-10" />}
                   title="Democratize Knowledge Exchange"
-                  description="Leverage virtual spaces to connect thought leaders and emerging scholars globally, eliminating geographical barriers and fostering inclusive participation across institutional settings."
+                  description="Utilize hybrid participation to connect thought leaders and emerging scholars globally — eliminating geographical barriers and promoting inclusive engagement across institutions and backgrounds."
                   gradient="from-purple-400 to-indigo-500"
                 />
 
                 <ObjectiveCard
                   icon={<Globe className="h-10 w-10" />}
                   title="Address Systemic Global Challenges"
-                  description="Harness collective expertise from multiple disciplines to develop integrated approaches to pressing global issues that require diverse perspectives, from sustainability to social equity."
+                  description="Harness the collective expertise of diverse disciplines to co-develop integrated approaches to urgent global issues — from sustainability to equity — through both on-site and remote collaboration."
                   gradient="from-pink-400 to-fuchsia-500"
                 />
               </div>

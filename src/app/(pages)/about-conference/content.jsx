@@ -41,23 +41,16 @@ export default function AboutConference() {
 
                 <div className="space-y-6 text-purple-100/90">
                   <p>
-                    NextGenSynergy 2025 is a groundbreaking virtual interdisciplinary forum designed to transcend traditional 
-                    boundaries between academic disciplines. This premier event brings together researchers, technologists, and 
-                    visionaries from across the globe to explore collaborative approaches to complex problems through 
-                    innovative digital engagement.
+                  NextGenSynergy 2025 is a groundbreaking hybrid interdisciplinary forum designed to break down traditional boundaries between academic disciplines. This premier event brings together researchers, technologists, innovators, and change-makers from around the world — both in-person in Delhi and online — to explore collaborative approaches to today’s most complex challenges.
+                  </p>
+                  <p>
+                  In a world where knowledge and innovation span across fields, NextGenSynergy creates a vibrant space for the cross-pollination of ideas, methodologies, and technologies. From keynote presentations by global thought leaders to interactive workshops, live panel discussions, and dynamic networking opportunities, every aspect of the conference is crafted to spark impactful, cross-disciplinary collaboration.
                   </p>
 
                   <p>
-                    In an era where traditional boundaries between academic disciplines are dissolving, NextGenSynergy
-                    provides a digital platform for cross-pollination of ideas, methodologies, and technologies. Our forum
-                    features keynote presentations from world-renowned experts, interactive virtual workshops, panel
-                    discussions, and innovative networking opportunities designed to foster collaboration across fields.
-                  </p>
+                  Whether you're a seasoned researcher, an industry expert, an emerging innovator, or a student exploring new frontiers, NextGenSynergy offers an inclusive and inspiring platform to engage with bold ideas and connect with a global community — both on the ground in Delhi and online from anywhere in the world.
 
-                  <p>
-                    Whether you're a seasoned researcher, industry professional, or a student exploring new frontiers,
-                    NextGenSynergy offers a unique opportunity to engage with cutting-edge research and form connections
-                    that transcend traditional disciplinary boundaries—all from the comfort of your own workspace.
+
                   </p>
                 </div>
               </div>
@@ -87,8 +80,8 @@ export default function AboutConference() {
 
                 <div className="space-y-6 text-purple-100/90">
                   <p>
-                    NextGenSynergy's mission is to accelerate scientific discovery and innovation through interdisciplinary
-                    collaboration in a virtual environment that eliminates geographical barriers. We aim to:
+                  NextGenSynergy’s mission is to accelerate discovery, innovation, and collaboration by building a bridge between disciplines in a flexible, inclusive hybrid environment. We aim to:
+
                   </p>
 
                   <ul className="space-y-4 pl-6">
@@ -96,14 +89,14 @@ export default function AboutConference() {
                       <div className="flex h-6 w-6 shrink-0 items-center justify-center rounded-full bg-gradient-to-r from-cyan-400 to-blue-500 text-white font-bold text-xs">
                         1
                       </div>
-                      <span>Dismantle barriers between academic disciplines and research methodologies</span>
+                      <span>Break down silos between academic disciplines and research methods.</span>
                     </li>
                     <li className="flex items-start gap-3">
                       <div className="flex h-6 w-6 shrink-0 items-center justify-center rounded-full bg-gradient-to-r from-fuchsia-400 to-purple-500 text-white font-bold text-xs">
                         2
                       </div>
                       <span>
-                        Foster innovative approaches to global challenges through virtual collaborative research
+                      Foster bold, collaborative approaches to global challenges.  
                       </span>
                     </li>
                     <li className="flex items-start gap-3">
@@ -111,14 +104,14 @@ export default function AboutConference() {
                         3
                       </div>
                       <span>
-                        Showcase cutting-edge virtual technologies that enable new forms of scientific inquiry
+                      Showcase hybrid technologies that enable new forms of inquiry and connection.
                       </span>
                     </li>
                     <li className="flex items-start gap-3">
                       <div className="flex h-6 w-6 shrink-0 items-center justify-center rounded-full bg-gradient-to-r from-pink-400 to-fuchsia-500 text-white font-bold text-xs">
                         4
                       </div>
-                      <span>Build an inclusive global community of researchers unbounded by geographic constraints</span>
+                      <span>Build a diverse, worldwide community of changemakers — no matter where they are.  </span>
                     </li>
                   </ul>
                 </div>
@@ -144,20 +137,20 @@ export default function AboutConference() {
               {
                 title: "World-Class Speakers",
                 description:
-                  "Hear from leading researchers and innovators at the forefront of interdisciplinary science",
+                  "Hear from leading scientists, technologists, entrepreneurs, and artists reshaping the world through cross-disciplinary work.",
                 icon: <Users className="h-8 w-8 text-cyan-400" />,
                 gradient: "from-cyan-500 to-blue-600",
               },
               {
                 title: "Interactive Workshops",
                 description:
-                  "Participate in hands-on virtual sessions exploring collaborative research methodologies",
+                  "Take part in hands-on hybrid sessions exploring collaborative research tools and innovative frameworks.",
                 icon: <Lightbulb className="h-8 w-8 text-fuchsia-400" />,
                 gradient: "from-fuchsia-500 to-purple-600",
               },
               {
                 title: "Networking Opportunities",
-                description: "Connect with peers and potential collaborators in our innovative virtual spaces",
+                description: "Connect with peers, mentors, investors, and potential collaborators — in-person or virtually — through smart networking tools and curated meetups.",
                 icon: <Zap className="h-8 w-8 text-purple-400" />,
                 gradient: "from-purple-500 to-indigo-600",
               },
@@ -206,7 +199,7 @@ export default function AboutConference() {
                     <div>
                       <h3 className="text-xl font-medium text-white mb-2">Unparalleled Insights</h3>
                       <p className="text-purple-100/80">
-                      Learn from world-renowned speakers, top CEOs, groundbreaking researchers, and visionary artists shaping the next frontier.
+                      Get inspired by world-renowned speakers, bold thinkers, and trailblazers from diverse domains.
 
                       </p>
                     </div>
@@ -219,7 +212,7 @@ export default function AboutConference() {
                     <div>
                       <h3 className="text-xl font-medium text-white mb-2">Hands-on Innovation</h3>
                       <p className="text-purple-100/80">
-                      Participate in live demos, interactive workshops, and solution labs where ideas become action.
+                      Join live demonstrations, problem-solving labs, and collaborative design sprints that turn ideas into impact.
 
                       </p>
                     </div>
@@ -232,7 +225,7 @@ export default function AboutConference() {
                     <div>
                       <h3 className="text-xl font-medium text-white mb-2">Global Networking                      </h3>
                       <p className="text-purple-100/80">
-                      Meet the partners, investors, collaborators, and mentors who can transform your vision into reality.
+                      Build meaningful connections with global professionals — whether you're on-site in Delhi or joining remotely.
 
                       </p>
                     </div>
@@ -245,7 +238,7 @@ export default function AboutConference() {
                     <div>
                       <h3 className="text-xl font-medium text-white mb-2">Nextgen Awards Gala</h3>
                       <p className="text-purple-100/80">
-                      Celebrate the innovators redefining industries and communities across the globe.
+                      Celebrate boundary-pushing individuals and teams driving change across disciplines and sectors.
 
                       </p>
                     </div>

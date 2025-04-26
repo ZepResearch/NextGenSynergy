@@ -144,7 +144,7 @@ const SpeakerDrawer = ({ isOpen, onClose, speaker }) => (
 
             {/* Speaker image */}
             <div className="relative h-[300px] w-full rounded-xl overflow-hidden border border-purple-400/30 mt-6 mb-6">
-              <Image src={`  https://conference.pockethost.io/api/files/${speaker.collectionId}/${speaker.id}/${speaker.image}`}alt={speaker.name} fill className="object-contain" />
+              <Image src={`https://conference.pockethost.io/api/files/${speaker.collectionId}/${speaker.id}/${speaker.image}`}  alt={speaker.name} fill className="object-contain" />
               <div className="absolute inset-0 bg-gradient-to-t from-purple-900/90 via-purple-900/40 to-transparent"></div>
             
               {/* Floating elements */}

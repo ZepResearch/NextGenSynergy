@@ -110,7 +110,7 @@ export default function Navbar() {
   return (
     <header
       className={cn(
-        "fixed top-0 left-0 w-full z-50 transition-all duration-300",
+        "fixed top-0 left-0 w-full z-40 transition-all duration-300",
         scrolled 
           ? "bg-white/10 backdrop-blur-lg border-b border-purple-500/30" 
           : "bg-transparent"
@@ -201,13 +201,17 @@ export default function Navbar() {
             </SheetTrigger>
             <SheetContent side="right" className="w-full sm:w-80 bg-black/95 border-purple-500/30 backdrop-blur-xl p-0">
               <div className="h-full flex flex-col">
-                <div className="p-4 border-b border-purple-500/30">
-                  <div className="text-xl font-bold tracking-wider text-white">
-                    <span className="text-transparent bg-clip-text bg-gradient-to-r from-blue-400 via-purple-500 to-pink-500">
-                      METAVERSE
-                    </span>
-                  </div>
-                </div>
+              <Link href="/" className="flex items-center justify-center mt-1">
+            <motion.div
+              initial={{ opacity: 0, x: -20 }}
+              animate={{ opacity: 1, x: 0 }}
+              transition={{ duration: 0.5 }}
+              className="text-2xl font-bold tracking-wider text-white"
+            >
+              <Image src={'/Logox.svg'} className="drop-shadow-2xl " alt="logo" height={170} width={170}/>
+             
+            </motion.div>
+          </Link>
                 <nav className="flex-1 overflow-auto py-4">
                   {navLinks.map((link) => (
                     <div key={link.title} className="mb-1">
@@ -219,12 +223,12 @@ export default function Navbar() {
                               <ChevronDown className="h-4 w-4 text-gray-400" />
                             </button>
                           </DropdownMenuTrigger>
-                          <DropdownMenuContent className="w-full bg-black/95 border-purple-500/30">
+                          <DropdownMenuContent className="w-full bg-black/90 border-purple-500/30">
                             {link.dropdown.map((item) => (
-                              <DropdownMenuItem key={item.href} asChild>
+                              <DropdownMenuItem key={item.href} asChild className={'text-gray-200 hover:bg-purple-500/20'}>
                                 <Link
                                   href={item.href}
-                                  className="w-full cursor-pointer"
+                                  className="w-full cursor-pointer active:text-amber-50 text-white hover:bg-purple-500/20 hover:text-white transition-colors px-4 py-2 text-sm "
                                 >
                                   {item.title}
                                 </Link>

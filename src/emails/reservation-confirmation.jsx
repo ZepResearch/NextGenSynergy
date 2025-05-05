@@ -87,7 +87,7 @@ import {
                   width="180"
                   height="60"
                   alt="NextGenSynergy Logo"
-                  className="mx-auto"
+                  className="mx-auto object-contain"
                 />
               </Section>
   

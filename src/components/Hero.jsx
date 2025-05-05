@@ -4,6 +4,7 @@ import { FeatureCard } from "@/components/ui/feature-card"
 import { Button } from "@/components/ui/button"
 import { ChevronRight, Braces, Network, Microscope } from "lucide-react"
 import Link from "next/link"
+import { ReserveButton } from "./reserve-button"
 
 export default function Hero() {
   return (
@@ -71,6 +72,7 @@ export default function Hero() {
                   Learn More <ChevronRight className="ml-2 h-5 w-5" />
                 </Button>
                 </Link>
+                <ReserveButton/>
               </div>
             </div>
 

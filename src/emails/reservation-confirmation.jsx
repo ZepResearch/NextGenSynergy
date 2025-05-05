@@ -83,7 +83,7 @@ import {
               {/* Header with logo */}
               <Section className="text-center mb-4">
                 <Img
-                  src="https://i.ibb.co/Qp1NKcZ/nextgensynergy-logo.png"
+                  src="https://i.ibb.co/4wwVBwpf/Chat-GPT-Image-Apr-19-2025-11-43-56-PM.png"
                   width="180"
                   height="60"
                   alt="NextGenSynergy Logo"

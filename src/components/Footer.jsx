@@ -84,7 +84,7 @@ export default function Footer() {
           <div>
             <div className="flex items-center mb-4">
              <Image
-                src="/logox.svg"
+                src="/Logox.svg"
                 alt="NextGenSynergy Logo"
                 width={200}
                 height={200}

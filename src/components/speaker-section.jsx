@@ -15,53 +15,7 @@ const speakerCategories = [
     { id: "Conference Chair", title: "Conference Chair" },
     { id: "Conference Co-Chair", title: "Conference Co-Chair" },
     { id: "Session Chair", title: "Session Chair" },
-  ];
-
-// Sample speaker data (will be replaced with PocketBase data)
-const sampleSpeakers = {
-  keynote: [
-    {
-      id: "1",
-      name: "Dr. Amara Singh",
-      role: "Quantum Computing Researcher",
-      organization: "Delhi Institute of Technology",
-      country: "India",
-      bio: "Dr. Singh is a leading researcher in quantum computing applications for multidisciplinary research. Her work bridges the gap between theoretical physics and practical applications in various scientific domains.",
-      image: "/placeholder.svg?height=400&width=300",
-    },
-    {
-      id: "2",
-      name: "Prof. Michael Chen",
-      role: "Director of Metaverse Studies",
-      organization: "Global Research Alliance",
-      country: "Singapore",
-      bio: "Professor Chen has pioneered research on the intersection of virtual worlds and scientific collaboration. His work focuses on creating immersive environments for cross-disciplinary research teams.",
-      image: "/placeholder.svg?height=400&width=300",
-    },
-  ],
-  invited: [
-    {
-      id: "3",
-      name: "Dr. Sophia Rodriguez",
-      role: "AI Ethics Researcher",
-      organization: "Tech Ethics Institute",
-      country: "Mexico",
-      bio: "Dr. Rodriguez specializes in ethical considerations of AI in research environments. Her work has shaped policies for responsible AI use across multiple disciplines.",
-      image: "/placeholder.svg?height=400&width=300",
-    },
-  ],
-  session: [
-    {
-      id: "4",
-      name: "Dr. James Wilson",
-      role: "Biotechnology Researcher",
-      organization: "Life Sciences University",
-      country: "United Kingdom",
-      bio: "Dr. Wilson leads research on digital twins for biological systems. His session will focus on virtual modeling of complex biological processes.",
-      image: "/placeholder.svg?height=400&width=300",
-    },
-  ],
-}
+];
 
 // Speaker card component
 const SpeakerCard = ({ speaker, onMoreInfo }) => {
@@ -71,30 +25,25 @@ const SpeakerCard = ({ speaker, onMoreInfo }) => {
       className="relative backdrop-blur-sm bg-purple-900/20 rounded-xl border border-purple-400/20 overflow-hidden"
     >
       {/* Decorative elements */}
-      <div className="absolute -inset-px rounded-xl bg-gradient-to-r from-cyan-500/20 via-transparent to-fuchsia-500/20 opacity-0 group-hover:opacity-100 transition-opacity"></div>
 
       <div className="relative p-1">
         {/* Speaker image */}
         <div className="relative h-[280px] w-full rounded-lg overflow-hidden mb-4 border border-purple-400/30">
-          <Image src={`https://conference.pockethost.io/api/files/${speaker.collectionId}/${speaker.id}/${speaker.image}`} alt={speaker.name} fill className="object-contain" />
-          <div className="absolute inset-0 bg-gradient-to-t from-purple-900/90 via-purple-900/30 to-transparent"></div>
+          <Image 
+            src={`https://conference.pockethost.io/api/files/${speaker.collectionId}/${speaker.id}/${speaker.image}`} 
+            alt={speaker.name} 
+            fill 
+            className="object-contain" 
+          />
 
           {/* Floating elements */}
-          <div className="absolute top-1/4 right-1/4 h-12 w-12 rounded-full bg-cyan-400 blur-xl opacity-50 animate-pulse"></div>
-          <div
-            className="absolute bottom-1/3 left-1/3 h-16 w-16 rounded-full bg-fuchsia-400 blur-xl opacity-50 animate-pulse"
-            style={{ animationDelay: "1s" }}
-          ></div>
+         
         </div>
 
         {/* Speaker info */}
         <div className="p-4">
           <h3 className="text-xl font-bold text-white mb-1">{speaker.name}</h3>
           <p className="text-cyan-300 font-medium mb-1">{speaker.role}</p>
-          {/* <div className="flex items-center gap-1.5 text-purple-100/70 text-sm mb-3">
-            <Briefcase className="h-3.5 w-3.5" />
-            <span>{speaker.organization}</span>
-          </div> */}
           <div className="flex items-center gap-1.5 text-purple-100/70 text-sm mb-4">
             <MapPin className="h-3.5 w-3.5" />
             <span>{speaker.country}</span>
@@ -144,15 +93,15 @@ const SpeakerDrawer = ({ isOpen, onClose, speaker }) => (
 
             {/* Speaker image */}
             <div className="relative h-[300px] w-full rounded-xl overflow-hidden border border-purple-400/30 mt-6 mb-6">
-              <Image src={`https://conference.pockethost.io/api/files/${speaker.collectionId}/${speaker.id}/${speaker.image}`}  alt={speaker.name} fill className="object-contain" />
-              <div className="absolute inset-0 bg-gradient-to-t from-purple-900/90 via-purple-900/40 to-transparent"></div>
+              <Image 
+                src={`https://conference.pockethost.io/api/files/${speaker.collectionId}/${speaker.id}/${speaker.image}`} 
+                alt={speaker.name} 
+                fill 
+                className="object-contain" 
+              />
             
               {/* Floating elements */}
-              <div className="absolute top-1/4 right-1/4 h-16 w-16 rounded-full bg-cyan-400 blur-xl opacity-50 animate-pulse"></div>
-              <div
-                className="absolute bottom-1/3 left-1/3 h-20 w-20 rounded-full bg-fuchsia-400 blur-xl opacity-50 animate-pulse"
-                style={{ animationDelay: "1s" }}
-              ></div>
+              
             </div>
 
             {/* Speaker info */}
@@ -193,30 +142,31 @@ export function SpeakerSection() {
   const [activeCategory, setActiveCategory] = useState("Guest Speaker")
   const [selectedSpeaker, setSelectedSpeaker] = useState(null)
   const [isDrawerOpen, setIsDrawerOpen] = useState(false)
-  const [speakers, setSpeakers] = useState()
+  const [speakers, setSpeakers] = useState({}) // Initialize with empty object
   const [loading, setLoading] = useState(true)
   const [error, setError] = useState(null)
 
   useEffect(() => {
     const fetchSpeakers = async () => {
       try {
-        // Initialize PocketBase
+        // Initialize empty speakers object with all categories
+        const initialSpeakers = {}
+        speakerCategories.forEach(({ id }) => {
+          initialSpeakers[id] = []
+        })
         
         // Fetch speakers
         const records = await pb.collection("NextGenSynergy_speakers").getFullList({
           sort: "name",
-            requestKey: null,
+          requestKey: null,
         })
 
         if (records && records.length > 0) {
           // Group speakers by category
-          const groupedSpeakers = records.reduce((acc, speaker) => {
-            const category = speaker.category;
-            if (!acc[category]) {
-              acc[category] = []
-            }
-
-            acc[category].push({
+          records.forEach(speaker => {
+            const category = speaker.category
+            if (category && initialSpeakers[category] !== undefined) {
+              initialSpeakers[category].push({
                 name: speaker.name,
                 role: speaker.role,
                 image: speaker.image,
@@ -225,25 +175,16 @@ export function SpeakerSection() {
                 collectionId: speaker.collectionId,
                 college: speaker.college,
                 country: speaker.country,
-            })
-
-            return acc
-          }, {})
-
-          // Ensure all categories exist in the grouped speakers object
-          speakerCategories.forEach(({ id }) => {
-            if (!groupedSpeakers[id]) {
-              groupedSpeakers[id] = []
+              })
             }
           })
-
-          setSpeakers(groupedSpeakers)
         }
 
+        setSpeakers(initialSpeakers)
         setLoading(false)
       } catch (err) {
         console.error("Failed to fetch speakers:", err)
-        // Keep using sample data if fetch fails
+        setError("Failed to load speakers. Please try again later.")
         setLoading(false)
       }
     }
@@ -330,7 +271,7 @@ export function SpeakerSection() {
               transition={{ duration: 0.3 }}
               className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-8"
             >
-              {speakers[activeCategory]?.length > 0 ? (
+              {speakers[activeCategory] && speakers[activeCategory].length > 0 ? (
                 speakers[activeCategory].map((speaker, index) => (
                   <motion.div
                     key={speaker.id}
@@ -343,8 +284,15 @@ export function SpeakerSection() {
                 ))
               ) : (
                 <div className="col-span-3 py-12 text-center">
-                  <div className="relative backdrop-blur-sm bg-purple-900/20 rounded-xl border border-purple-400/20 p-6 max-w-md mx-auto">
-                    <p className="text-purple-100/80">No speakers found in this category</p>
+                  <div className="relative backdrop-blur-sm bg-purple-900/20 rounded-xl border border-purple-400/20 p-8 max-w-md mx-auto">
+                    <div className="mb-4">
+                      <div className="relative h-24 w-24 mx-auto">
+                        <div className="absolute inset-0 rounded-full border-2 border-transparent border-t-cyan-400 opacity-30 animate-pulse"></div>
+                        <div className="absolute inset-4 rounded-full border-2 border-transparent border-l-fuchsia-400 opacity-30 animate-pulse" style={{ animationDuration: "1.5s" }}></div>
+                      </div>
+                    </div>
+                    <h3 className="text-xl font-medium text-cyan-300 mb-2">Coming Soon</h3>
+                    <p className="text-purple-100/80">Speakers will be announced soon. Please check back later.</p>
                   </div>
                 </div>
               )}

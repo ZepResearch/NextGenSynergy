@@ -8,8 +8,8 @@ import Link from "next/link"
 
 export function JournalCard({ journal, index, pocketbaseUrl }) {
   // Determine the image source - use the file field (imgs) if available
-  const imageUrl = journal.imgs
-    ? `${pocketbaseUrl}/api/files/${journal.collectionId}/${journal.id}/${journal.imgs}`
+  const imageUrl = journal.img
+    ? `https://${process.env.NEXT_PUBLIC_POCKETBASE_URL}/api/files/${journal.collectionId}/${journal.id}/${journal.img}`
     : journal.img || "/placeholder.svg?height=300&width=200"
 
   return (

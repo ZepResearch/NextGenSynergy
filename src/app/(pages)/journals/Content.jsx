@@ -6,9 +6,9 @@ import { ChevronRight, BookOpen, Search, Loader2, ExternalLink, FileText } from 
 
 import { JournalCard } from "./components/journal-card"
 import { Input } from "@/components/ui/input"
-import PocketBase from 'pocketbase';
+import { pb } from "@/lib/pocketbase"
 
-const pb = new PocketBase('https://zep-research.pockethost.io');
+
 export default function JournalsPage() {
   const [journals, setJournals] = useState([])
   const [filteredJournals, setFilteredJournals] = useState([])
@@ -19,7 +19,7 @@ export default function JournalsPage() {
   useEffect(() => {
     const fetchJournals = async () => {
       try {
-        const records = await pb.collection("Journals").getFullList({
+        const records = await pb.collection("NextGenSynergy_journals").getFullList({
           sort: "title",
           requestKey: null
         })

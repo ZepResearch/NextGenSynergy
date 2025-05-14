@@ -26,7 +26,7 @@ export function RegistrationCard({
   // Calculate tax amount and total here to ensure consistency
   const calculatedTaxAmount = Number((price * taxRate).toFixed(2))
   const calculatedTotalAmount = Number((price + calculatedTaxAmount).toFixed(2))
-  
+
   // Use calculated values instead of passed props to ensure consistency
   const displayTaxAmount = calculatedTaxAmount
   const displayTotalAmount = calculatedTotalAmount
@@ -86,16 +86,18 @@ export function RegistrationCard({
           </div>
 
           <Button
-            onClick={() => onSelect({
-              type,
-              category,
-              name,
-              price,
-              taxRate,
-              taxAmount: calculatedTaxAmount,
-              totalAmount: calculatedTotalAmount,
-              currency
-            })}
+            onClick={() =>
+              onSelect({
+                type,
+                category,
+                name,
+                price,
+                taxRate,
+                taxAmount: calculatedTaxAmount,
+                totalAmount: calculatedTotalAmount,
+                currency,
+              })
+            }
             className={`w-full bg-gradient-to-r ${gradientFrom} ${gradientTo} hover:brightness-110 text-white border-0`}
           >
             <CreditCard className={`mr-2 h-4 w-4 ${iconColor}`} />

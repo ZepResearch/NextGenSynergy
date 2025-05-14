@@ -2,7 +2,7 @@ import Image from "next/image"
 import { GeometricShapes } from "@/components/ui/geometric-shapes"
 import { FeatureCard } from "@/components/ui/feature-card"
 import { Button } from "@/components/ui/button"
-import { ChevronRight, Braces, Network, Microscope } from "lucide-react"
+import { ChevronRight, Braces, Network, Microscope, Calendar, MapPin } from "lucide-react"
 import Link from "next/link"
 import { ReserveButton } from "./reserve-button"
 
@@ -38,6 +38,19 @@ export default function Hero() {
               <p className="text-lg text-purple-100/80 max-w-2xl">
               Welcome to the Nextgen Synergy Conference — a groundbreaking hybrid experience where the brightest minds, boldest ideas, and breakthrough technologies converge, both in-person and online.
               </p>
+
+              <div className="flex items-center flex-row gap-4 text-white text-xl">
+                <div className="inline-flex items-center gap-2">
+                  <Calendar className="h-6 w-6 text-purple-400" />
+                
+                    August 21<sup>st</sup>-22<sup>nd</sup>, 2025
+                  
+                </div>
+                <div  className="inline-flex items-center gap-2">
+                 <MapPin className="h-6 w-6 text-purple-400"/>
+                 Delhi, India 
+                </div>
+              </div>
 
               <div className="flex sm:flex-row flex-col-reverse  items-start sm:items-center justify-center gap-3 px-4 max-w-2xl  backdrop-blur-sm bg-gray-50/30 py-4 rounded-3xl">
               <img
@@ -79,7 +92,7 @@ export default function Hero() {
             <div className="relative">
               <div className="relative h-[400px] w-full md:h-[500px] rounded-2xl overflow-hidden border border-purple-400/20 backdrop-blur-sm">
                 <Image
-                  src="https://images.unsplash.com/photo-1637664067109-a6a00840d894?q=80&w=1932&auto=format&fit=crop&ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D"
+                  src="https://images.unsplash.com/photo-1730886769116-2cbaf94588d0?q=80&w=2070&auto=format&fit=crop&ixlib=rb-4.1.0&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D"
                   alt="Virtual conference visualization"
                   fill
                   className="object-cover"

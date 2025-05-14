@@ -81,16 +81,16 @@ export default function Footer() {
       <div className="container mx-auto px-4 py-12 relative z-10">
         <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-4 gap-10">
           {/* Column 1 - About */}
+          
           <div>
             <div className="flex items-center mb-4">
-             <Image
+            <Image
                 src="/Logox.svg"
                 alt="NextGenSynergy Logo"
                 width={200}
                 height={200}
                 className=" rounded-full mr-3"
               />
-              
             </div>
             <p className="text-purple-200/80 mb-6">
               The Hybrid Interdisciplinary Forum bringing together researchers, technologists, and visionaries to
@@ -136,7 +136,7 @@ export default function Footer() {
               <li>
                 <FooterLink href="/contact">Contact</FooterLink>
               </li>
-              <li>
+               <li>
                 <FooterLink href="/journals">Journals</FooterLink>
               </li>
             </ul>
@@ -167,7 +167,7 @@ export default function Footer() {
               </li>
               <li className="flex items-center">
                 <Globe className="h-5 w-5 mr-3 text-cyan-400 shrink-0" />
-                <Link
+                 <Link
                   href="https://www.zepresearch.com/"
                   className="text-purple-200/80 hover:text-cyan-300 transition-colors flex items-center"
                 >
@@ -283,15 +283,52 @@ export default function Footer() {
                 </motion.div>
               </Link>
             </div>
+            
           </div>
-
+    
+  
       </div>
-        <div className="mt-12 pt-8 border-t border-purple-500/30 text-center">
-          <p className="text-purple-200/60">
-            © {new Date().getFullYear()} NextGenSynergy: The Hybrid Interdisciplinary Forum. All rights reserved.
-          </p>
-        </div>
+        <div className="mt-12 pt-8 border-t border-purple-500/30 w-full">
+  <div className="flex flex-col items-center justify-center space-y-4">
+    {/* Policy Links */}
+    <div className="flex flex-wrap justify-center gap-x-6 gap-y-2">
+      <Link 
+        href="/privacy-policy" 
+        className="text-purple-200/70 hover:text-cyan-300 text-sm transition-colors duration-300 flex items-center"
+      >
+        <span className="relative">
+          Privacy Policy
+          <span className="absolute -bottom-0.5 left-0 w-0 h-[1px] bg-gradient-to-r from-cyan-400 to-purple-400 group-hover:w-full transition-all duration-300"></span>
+        </span>
+      </Link>
+      <Link 
+        href="/terms-and-conditions" 
+        className="text-purple-200/70 hover:text-cyan-300 text-sm transition-colors duration-300 flex items-center"
+      >
+        <span className="relative">
+          Terms & Conditions
+          <span className="absolute -bottom-0.5 left-0 w-0 h-[1px] bg-gradient-to-r from-cyan-400 to-purple-400 group-hover:w-full transition-all duration-300"></span>
+        </span>
+      </Link>
+      <Link 
+        href="/cancellation-policy" 
+        className="text-purple-200/70 hover:text-cyan-300 text-sm transition-colors duration-300 flex items-center"
+      >
+        <span className="relative">
+          Cancellation Policy
+          <span className="absolute -bottom-0.5 left-0 w-0 h-[1px] bg-gradient-to-r from-cyan-400 to-purple-400 group-hover:w-full transition-all duration-300"></span>
+        </span>
+      </Link>
+    </div>
+    
+    {/* Copyright */}
+  </div>
+    <p className="text-purple-200/60 text-center mt-4">
+      © {new Date().getFullYear()} NextGenSynergy: The Hybrid Interdisciplinary Forum. All rights reserved.
+    </p>
+</div>
       </div>
+      
     </footer>
   )
 }

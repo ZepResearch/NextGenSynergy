@@ -12,16 +12,17 @@ export default function RegistrationPage() {
   const [selectedTicket, setSelectedTicket] = useState(null)
   const [isPaymentFormOpen, setIsPaymentFormOpen] = useState(false)
   const [isLoading, setIsLoading] = useState(false)
+
   const handleTicketSelect = (ticket) => {
     // Recalculate tax and total to ensure consistency
     const taxAmount = Number((ticket.price * ticket.taxRate).toFixed(2))
     const totalAmount = Number((ticket.price + taxAmount).toFixed(2))
-    
+
     // Set selectedTicket with properly calculated values
     setSelectedTicket({
       ...ticket,
       taxAmount: taxAmount,
-      totalAmount: totalAmount
+      totalAmount: totalAmount,
     })
     setIsPaymentFormOpen(true)
   }
@@ -100,85 +101,91 @@ export default function RegistrationPage() {
     }
   }
 
-  // Registration fee data
-  const registrationFees = [
-    {
-      category: "Students",
-      type: "International",
-      currency: "USD",
-      options: [
-        {
-          name: "Paper Presentation",
-          price: 99,
-          taxRate: 0.06,
-          description: "Present your research paper at the conference",
+  // Registration fee data structured according to the images
+  const registrationFees = {
+    physical: {
+      indian: {
+        student: {
+          presenter: {
+            price: 3000,
+            currency: "INR",
+            taxRate: 0.18,
+            description: "Present your research paper at the conference",
+          },
+          listener: {
+            price: 2000,
+            currency: "INR",
+            taxRate: 0.18,
+            description: "Attend all sessions without presenting",
+          },
         },
-        {
-          name: "Listener",
-          price: 79,
-          taxRate: 0.06,
-          description: "Attend all sessions without presenting",
+        academician: {
+          presenter: {
+            price: 5000,
+            currency: "INR",
+            taxRate: 0.18,
+            description: "Present your research paper at the conference",
+          },
+          listener: {
+            price: 2000,
+            currency: "INR",
+            taxRate: 0.18,
+            description: "Attend all sessions without presenting",
+          },
         },
-      ],
+      },
+      foreign: {
+        student: {
+          presenter: {
+            price: 199,
+            currency: "USD",
+            taxRate: 0.06,
+            description: "Present your research paper at the conference",
+          },
+          listener: {
+            price: 99,
+            currency: "USD",
+            taxRate: 0.06,
+            description: "Attend all sessions without presenting",
+          },
+        },
+        academician: {
+          presenter: {
+            price: 249,
+            currency: "USD",
+            taxRate: 0.06,
+            description: "Present your research paper at the conference",
+          },
+          listener: {
+            price: 99,
+            currency: "USD",
+            taxRate: 0.06,
+            description: "Attend all sessions without presenting",
+          },
+        },
+      },
     },
-    {
-      category: "Academicians",
-      type: "International",
-      currency: "USD",
-      options: [
-        {
-          name: "Paper Presentation",
-          price: 159,
-          taxRate: 0.06,
-          description: "Present your research paper at the conference",
+    virtual: {
+      foreign: {
+        student: {
+          presenter: {
+            price: 99,
+            currency: "USD",
+            taxRate: 0.06,
+            description: "Present your research paper virtually",
+          },
         },
-        {
-          name: "Listener",
-          price: 79,
-          taxRate: 0.06,
-          description: "Attend all sessions without presenting",
+        academician: {
+          presenter: {
+            price: 99,
+            currency: "USD",
+            taxRate: 0.06,
+            description: "Present your research paper virtually",
+          },
         },
-      ],
+      },
     },
-    {
-      category: "Students",
-      type: "Indian",
-      currency: "INR",
-      options: [
-        {
-          name: "Paper Presentation",
-          price: 2000,
-          taxRate: 0.18,
-          description: "Present your research paper at the conference",
-        },
-        {
-          name: "Listener",
-          price: 1500,
-          taxRate: 0.18,
-          description: "Attend all sessions without presenting",
-        },
-      ],
-    },
-    {
-      category: "Academicians",
-      type: "Indian",
-      currency: "INR",
-      options: [
-        {
-          name: "Paper Presentation",
-          price: 3000,
-          taxRate: 0.18,
-          description: "Present your research paper at the conference",
-        },
-        {
-          name: "Listener",
-          price: 1500,
-          taxRate: 0.18,
-          description: "Attend all sessions without presenting",
-        },
-      ],
-    },
-  ]
+  }
 
   return (
     <main className="pt-20 min-h-screen">
@@ -292,42 +299,252 @@ export default function RegistrationPage() {
             </div>
           </div>
 
-          {/* Registration Cards */}
-          <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-4 gap-6">
-            {registrationFees.map((category, categoryIndex) =>
-              category.options.map((option, optionIndex) => {
-                const taxAmount = option.price * option.taxRate
-                const totalAmount = option.price + taxAmount
+          {/* Physical Registration Section */}
+          <div className="mb-16">
+            <div className="text-center mb-10">
+              <h2 className="text-3xl font-bold mb-6 text-transparent bg-clip-text bg-gradient-to-r from-cyan-300 to-fuchsia-300">
+                Physical Registration
+              </h2>
+              <div className="h-1 w-20 bg-gradient-to-r from-cyan-400 to-fuchsia-400 mx-auto mb-8 rounded-full"></div>
+            </div>
 
-                return (
-                  <RegistrationCard
-                    key={`${categoryIndex}-${optionIndex}`}
-                    title={`${category.category} ${option.name}`}
-                    price={option.price}
-                    currency={category.currency}
-                    taxRate={option.taxRate}
-                    taxAmount={taxAmount}
-                    totalAmount={totalAmount}
-                    description={option.description}
-                    type={category.type}
-                    category={category.category}
-                    name={option.name}
-                    onSelect={() =>
-                      handleTicketSelect({
-                        type: category.type,
-                        category: category.category,
-                        name: option.name,
-                        price: option.price,
-                        taxRate: option.taxRate,
-                        taxAmount,
-                        totalAmount,
-                        currency: category.currency,
-                      })
-                    }
-                  />
-                )
-              }),
-            )}
+            {/* Indian Registration Cards */}
+            <div className="mb-10">
+              <h3 className="text-3xl font-semibold mb-6 text-white text-center">Indian</h3>
+              <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-4 gap-6 mb-10">
+                {/* Student Presenter */}
+                <RegistrationCard
+                  title="Student Presenter"
+                  price={registrationFees.physical.indian.student.presenter.price}
+                  currency={registrationFees.physical.indian.student.presenter.currency}
+                  taxRate={registrationFees.physical.indian.student.presenter.taxRate}
+                  taxAmount={
+                    registrationFees.physical.indian.student.presenter.price *
+                    registrationFees.physical.indian.student.presenter.taxRate
+                  }
+                  totalAmount={
+                    registrationFees.physical.indian.student.presenter.price *
+                    (1 + registrationFees.physical.indian.student.presenter.taxRate)
+                  }
+                  description={registrationFees.physical.indian.student.presenter.description}
+                  type="Indian"
+                  category="Student"
+                  name="Presenter"
+                  onSelect={handleTicketSelect}
+                />
+
+                {/* Student Listener */}
+                <RegistrationCard
+                  title="Student Listener"
+                  price={registrationFees.physical.indian.student.listener.price}
+                  currency={registrationFees.physical.indian.student.listener.currency}
+                  taxRate={registrationFees.physical.indian.student.listener.taxRate}
+                  taxAmount={
+                    registrationFees.physical.indian.student.listener.price *
+                    registrationFees.physical.indian.student.listener.taxRate
+                  }
+                  totalAmount={
+                    registrationFees.physical.indian.student.listener.price *
+                    (1 + registrationFees.physical.indian.student.listener.taxRate)
+                  }
+                  description={registrationFees.physical.indian.student.listener.description}
+                  type="Indian"
+                  category="Student"
+                  name="Listener"
+                  onSelect={handleTicketSelect}
+                />
+
+                {/* Academician Presenter */}
+                <RegistrationCard
+                  title="Academician Presenter"
+                  price={registrationFees.physical.indian.academician.presenter.price}
+                  currency={registrationFees.physical.indian.academician.presenter.currency}
+                  taxRate={registrationFees.physical.indian.academician.presenter.taxRate}
+                  taxAmount={
+                    registrationFees.physical.indian.academician.presenter.price *
+                    registrationFees.physical.indian.academician.presenter.taxRate
+                  }
+                  totalAmount={
+                    registrationFees.physical.indian.academician.presenter.price *
+                    (1 + registrationFees.physical.indian.academician.presenter.taxRate)
+                  }
+                  description={registrationFees.physical.indian.academician.presenter.description}
+                  type="Indian"
+                  category="Academician"
+                  name="Presenter"
+                  onSelect={handleTicketSelect}
+                />
+
+                {/* Academician Listener */}
+                <RegistrationCard
+                  title="Academician Listener"
+                  price={registrationFees.physical.indian.academician.listener.price}
+                  currency={registrationFees.physical.indian.academician.listener.currency}
+                  taxRate={registrationFees.physical.indian.academician.listener.taxRate}
+                  taxAmount={
+                    registrationFees.physical.indian.academician.listener.price *
+                    registrationFees.physical.indian.academician.listener.taxRate
+                  }
+                  totalAmount={
+                    registrationFees.physical.indian.academician.listener.price *
+                    (1 + registrationFees.physical.indian.academician.listener.taxRate)
+                  }
+                  description={registrationFees.physical.indian.academician.listener.description}
+                  type="Indian"
+                  category="Academician"
+                  name="Listener"
+                  onSelect={handleTicketSelect}
+                />
+              </div>
+            </div>
+
+            {/* Foreign Registration Cards */}
+            <div>
+              <h3 className="text-3xl font-semibold mb-6 text-white text-center">Foreign</h3>
+              <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-4 gap-6">
+                {/* Student Presenter */}
+                <RegistrationCard
+                  title="Student Presenter"
+                  price={registrationFees.physical.foreign.student.presenter.price}
+                  currency={registrationFees.physical.foreign.student.presenter.currency}
+                  taxRate={registrationFees.physical.foreign.student.presenter.taxRate}
+                  taxAmount={
+                    registrationFees.physical.foreign.student.presenter.price *
+                    registrationFees.physical.foreign.student.presenter.taxRate
+                  }
+                  totalAmount={
+                    registrationFees.physical.foreign.student.presenter.price *
+                    (1 + registrationFees.physical.foreign.student.presenter.taxRate)
+                  }
+                  description={registrationFees.physical.foreign.student.presenter.description}
+                  type="International"
+                  category="Student"
+                  name="Presenter"
+                  onSelect={handleTicketSelect}
+                />
+
+                {/* Student Listener */}
+                <RegistrationCard
+                  title="Student Listener"
+                  price={registrationFees.physical.foreign.student.listener.price}
+                  currency={registrationFees.physical.foreign.student.listener.currency}
+                  taxRate={registrationFees.physical.foreign.student.listener.taxRate}
+                  taxAmount={
+                    registrationFees.physical.foreign.student.listener.price *
+                    registrationFees.physical.foreign.student.listener.taxRate
+                  }
+                  totalAmount={
+                    registrationFees.physical.foreign.student.listener.price *
+                    (1 + registrationFees.physical.foreign.student.listener.taxRate)
+                  }
+                  description={registrationFees.physical.foreign.student.listener.description}
+                  type="International"
+                  category="Student"
+                  name="Listener"
+                  onSelect={handleTicketSelect}
+                />
+
+                {/* Academician Presenter */}
+                <RegistrationCard
+                  title="Academician Presenter"
+                  price={registrationFees.physical.foreign.academician.presenter.price}
+                  currency={registrationFees.physical.foreign.academician.presenter.currency}
+                  taxRate={registrationFees.physical.foreign.academician.presenter.taxRate}
+                  taxAmount={
+                    registrationFees.physical.foreign.academician.presenter.price *
+                    registrationFees.physical.foreign.academician.presenter.taxRate
+                  }
+                  totalAmount={
+                    registrationFees.physical.foreign.academician.presenter.price *
+                    (1 + registrationFees.physical.foreign.academician.presenter.taxRate)
+                  }
+                  description={registrationFees.physical.foreign.academician.presenter.description}
+                  type="International"
+                  category="Academician"
+                  name="Presenter"
+                  onSelect={handleTicketSelect}
+                />
+
+                {/* Academician Listener */}
+                <RegistrationCard
+                  title="Academician Listener"
+                  price={registrationFees.physical.foreign.academician.listener.price}
+                  currency={registrationFees.physical.foreign.academician.listener.currency}
+                  taxRate={registrationFees.physical.foreign.academician.listener.taxRate}
+                  taxAmount={
+                    registrationFees.physical.foreign.academician.listener.price *
+                    registrationFees.physical.foreign.academician.listener.taxRate
+                  }
+                  totalAmount={
+                    registrationFees.physical.foreign.academician.listener.price *
+                    (1 + registrationFees.physical.foreign.academician.listener.taxRate)
+                  }
+                  description={registrationFees.physical.foreign.academician.listener.description}
+                  type="International"
+                  category="Academician"
+                  name="Listener"
+                  onSelect={handleTicketSelect}
+                />
+              </div>
+            </div>
+          </div>
+
+          {/* Virtual Registration Section */}
+          <div className="mb-16">
+            <div className="text-center mb-10">
+              <h2 className="text-3xl font-bold mb-6 text-transparent bg-clip-text bg-gradient-to-r from-cyan-300 to-fuchsia-300">
+                Virtual Registration
+              </h2>
+              <div className="h-1 w-20 bg-gradient-to-r from-cyan-400 to-fuchsia-400 mx-auto mb-8 rounded-full"></div>
+            </div>
+
+            {/* Foreign Registration Cards */}
+            <div>
+              {/* <h3 className="text-2xl font-semibold mb-6 text-white text-center place-items-center">Foreign</h3> */}
+              <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-2 gap-12 max-w-3xl mx-auto">
+                {/* Student Presenter */}
+                <RegistrationCard
+                  title="Student Presenter"
+                  price={registrationFees.virtual.foreign.student.presenter.price}
+                  currency={registrationFees.virtual.foreign.student.presenter.currency}
+                  taxRate={registrationFees.virtual.foreign.student.presenter.taxRate}
+                  taxAmount={
+                    registrationFees.virtual.foreign.student.presenter.price *
+                    registrationFees.virtual.foreign.student.presenter.taxRate
+                  }
+                  totalAmount={
+                    registrationFees.virtual.foreign.student.presenter.price *
+                    (1 + registrationFees.virtual.foreign.student.presenter.taxRate)
+                  }
+                  description={registrationFees.virtual.foreign.student.presenter.description}
+                  type="Virtual"
+                  category="Student"
+                  name="Presenter"
+                  onSelect={handleTicketSelect}
+                />
+
+                {/* Academician Presenter */}
+                <RegistrationCard
+                  title="Academician Presenter"
+                  price={registrationFees.virtual.foreign.academician.presenter.price}
+                  currency={registrationFees.virtual.foreign.academician.presenter.currency}
+                  taxRate={registrationFees.virtual.foreign.academician.presenter.taxRate}
+                  taxAmount={
+                    registrationFees.virtual.foreign.academician.presenter.price *
+                    registrationFees.virtual.foreign.academician.presenter.taxRate
+                  }
+                  totalAmount={
+                    registrationFees.virtual.foreign.academician.presenter.price *
+                    (1 + registrationFees.virtual.foreign.academician.presenter.taxRate)
+                  }
+                  description={registrationFees.virtual.foreign.academician.presenter.description}
+                  type="Virtual"
+                  category="Academician"
+                  name="Presenter"
+                  onSelect={handleTicketSelect}
+                />
+              </div>
+            </div>
           </div>
         </div>
       </section>
@@ -397,15 +614,15 @@ export default function RegistrationPage() {
 
       {/* Payment Form Dialog */}
       <CCavenuePaymentForm
-  isOpen={isPaymentFormOpen}
-  onClose={handlePaymentFormClose}
-  ticketName={selectedTicket?.name}
-  amount={selectedTicket?.price || 0}
-  taxRate={selectedTicket?.taxRate || 0}
-  currency={selectedTicket?.currency || "USD"}
-  onSubmit={handlePaymentFormSubmit}
-  isLoading={isLoading}
-/>
+        isOpen={isPaymentFormOpen}
+        onClose={handlePaymentFormClose}
+        ticketName={selectedTicket?.name}
+        amount={selectedTicket?.price || 0}
+        taxRate={selectedTicket?.taxRate || 0}
+        currency={selectedTicket?.currency || "USD"}
+        onSubmit={handlePaymentFormSubmit}
+        isLoading={isLoading}
+      />
     </main>
   )
 }
